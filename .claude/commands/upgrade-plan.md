@@ -114,7 +114,7 @@ Include:
 /level[N]-[specific-command]
 
 # Validate completion
-/assess-level[N+1]
+/check-level[N+1]
 ```
 
 **After creating upgrade plan:**

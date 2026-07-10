@@ -18,7 +18,7 @@ This spec kit supports **two command formats** - use whichever you prefer:
 
 #### Option A: Slash Commands (Direct) ⚡
 ```bash
-/assess
+/quick-check
 ```
 Fast, explicit commands that execute immediately.
 
@@ -48,7 +48,7 @@ Tell me about my Datadog organization. Query available hosts and services.
 
 **Slash command**:
 ```bash
-/assess
+/quick-check
 ```
 
 **Natural language**:
@@ -90,7 +90,7 @@ All commands are organized by purpose. Simply copy and paste into Claude Code:
 
 **Slash command**:
 ```bash
-/assess
+/quick-check
 ```
 
 **Natural language**:
@@ -104,7 +104,7 @@ Run quick maturity assessment covering all 8 dimensions
 
 **Slash command**:
 ```bash
-/assess-full
+/full-check
 ```
 
 **Natural language**:
@@ -685,7 +685,7 @@ Level definitions: [planning/level-definitions.md](./planning/level-definitions.
 ### 1. "I'm new to this spec kit"
 **Run**:
 ```bash
-/assess
+/quick-check
 ```
 *Determines your current maturity level and provides next steps*
 
@@ -722,7 +722,7 @@ Level definitions: [planning/level-definitions.md](./planning/level-definitions.
 ### 5. "I want to validate my current level"
 **Run**:
 ```bash
-/assess-level0  # or /assess-level1, /assess-level2, etc.
+/check-level0  # or /check-level1, /check-level2, etc.
 ```
 *Checks if you meet all requirements for a specific level*
 
@@ -767,10 +767,10 @@ Track your progress:
 ### Assessment Commands
 | Command | Purpose | Time |
 |---------|---------|------|
-| `/assess` | Quick maturity check | 10 min |
-| `/assess-full` | Comprehensive assessment | 30 min |
-| `/assess-level0` | Level 0 validation | 15 min |
-| `/assess-level1` | Level 1 validation | 15 min |
+| `/quick-check` | Quick maturity check | 10 min |
+| `/full-check` | Comprehensive assessment | 30 min |
+| `/check-level0` | Level 0 validation | 15 min |
+| `/check-level1` | Level 1 validation | 15 min |
 | `/gap-analysis` | Identify gaps to next level | 10 min |
 | `/upgrade-plan` | Generate upgrade roadmap | 15 min |
 
@@ -793,7 +793,7 @@ Track your progress:
 |---------|---------|------|
 | `/generate-report` | Executive summary | 10 min |
 | `/save-to-notebook` | Save to Datadog | 2 min |
-| `/assess-to-notebook` | Assessment as notebook | 12 min |
+| `/check-to-notebook` | Assessment as notebook | 12 min |
 | `/append-to-notebook` | Append to existing notebook | 2 min |
 | `/create-starter-notebooks` | Generate 14 templates | 5 min |
 
@@ -810,7 +810,7 @@ For detailed command reference, see [COMMANDS.md](./COMMANDS.md)
 
 **Need Help?** Simply ask Claude: *"Show me available commands for [TASK]"*
 
-**Ready to start?** Run `/assess` now!
+**Ready to start?** Run `/quick-check` now!
 
 ---
 

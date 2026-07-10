@@ -47,10 +47,10 @@ Every assessment evaluates these 8 dimensions:
 ### Standard Workflow
 
 ```
-/assess → identifies current level
+/quick-check → identifies current level
 /gap-analysis → identifies gaps to next level
 /upgrade-plan → creates implementation roadmap
-/assess (re-run) → confirms graduation
+/quick-check (re-run) → confirms graduation
 ```
 
 ---
@@ -63,10 +63,10 @@ Commands live in `.claude/commands/` and work via `/command` OR natural language
 
 | Command | Duration | Purpose |
 |---------|----------|---------|
-| `/assess` | 10 min | Quick maturity check across all 8 dimensions |
-| `/assess-full` | 30 min | Comprehensive deep-dive with gap analysis |
-| `/assess-level0` | 15 min | Level 0 (Foundation) readiness check |
-| `/assess-level1` | 15 min | Level 1 (Reactive) readiness check |
+| `/quick-check` | 10 min | Quick maturity check across all 8 dimensions |
+| `/full-check` | 30 min | Comprehensive deep-dive with gap analysis |
+| `/check-level0` | 15 min | Level 0 (Foundation) readiness check |
+| `/check-level1` | 15 min | Level 1 (Reactive) readiness check |
 
 ### Task Commands (by Level)
 
@@ -326,7 +326,7 @@ tags: [category, type]
 ### Interaction Model
 
 Users can interact via:
-- **Slash commands**: Type `/` + command name (e.g. `/assess`)
+- **Slash commands**: Type `/` + command name (e.g. `/quick-check`)
 - **Natural language**: Conversational prompts (e.g. "run a maturity assessment")
 - **Self-service tools**: Directly use files in `assessment-tools/`
 

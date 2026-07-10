@@ -390,7 +390,7 @@ Each template uses standardized variables for easy customization:
 ## Integration Points
 
 Templates integrate with:
-- **Slash commands**: `/assess`, `/level0-infra`, etc. can use templates
+- **Slash commands**: `/quick-check`, `/level0-infra`, etc. can use templates
 - **Datadog Notebooks**: Templates can be pushed via `/save-to-notebook`
 - **Git workflow**: Version control for institutional knowledge
 - **Team collaboration**: Shared standards and formats

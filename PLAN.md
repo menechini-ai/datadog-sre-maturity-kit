@@ -62,9 +62,9 @@ assessment-tools/
 
 **Priority**: P2 (Completes assessment suite)
 
-- [ ] `/assess-level2` — Level 2 (Proactive) readiness check
-- [ ] `/assess-level3` — Level 3 (Managed) readiness check
-- [ ] `/assess-level4` — Level 4 (Optimized) readiness check
-- [ ] `/assess-level5` — Level 5 (Excellence) readiness check
+- [ ] `/check-level2` — Level 2 (Proactive) readiness check
+- [ ] `/check-level3` — Level 3 (Managed) readiness check
+- [ ] `/check-level4` — Level 4 (Optimized) readiness check
+- [ ] `/check-level5` — Level 5 (Excellence) readiness check
 
 **Estimated Effort**: 4-6 hours

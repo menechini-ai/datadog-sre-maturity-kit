@@ -12,7 +12,7 @@ All 18 commands follow the [Anthropic Claude Code command format](https://code.c
 
 ## 📊 Assessment Commands
 
-### `/assess`
+### `/quick-check`
 
 ```yaml
 ---
@@ -42,7 +42,7 @@ Run a quick SRE maturity assessment covering all 8 dimensions:
 
 ---
 
-### `/assess-full`
+### `/full-check`
 
 ```yaml
 ---
@@ -64,7 +64,7 @@ Comprehensive assessment with detailed analysis across all 8 dimensions.
 
 ---
 
-### `/assess-level0`
+### `/check-level0`
 
 ```yaml
 ---
@@ -88,7 +88,7 @@ Assesses readiness for Level 0 (Discovery & Planning).
 
 ---
 
-### `/assess-level1`
+### `/check-level1`
 
 ```yaml
 ---
@@ -310,7 +310,7 @@ Generate executive-level maturity report suitable for leadership presentation.
 
 ## 📓 Notebook Integration Commands
 
-### `/assess-to-notebook`
+### `/check-to-notebook`
 
 ```yaml
 ---
@@ -413,15 +413,15 @@ List all available slash commands for the Datadog SRE Maturity Kit, organized by
 
 ### New User
 ```bash
-/assess         # Quick assessment
-/assess-full    # Deep dive
+/quick-check         # Quick assessment
+/full-check    # Deep dive
 /gap-analysis   # Identify gaps
 /upgrade-plan   # Create roadmap
 ```
 
 ### Monthly Check-in
 ```bash
-/assess         # Quick assessment
+/quick-check         # Quick assessment
 # Compare to previous month
 ```
 
@@ -431,12 +431,12 @@ List all available slash commands for the Datadog SRE Maturity Kit, organized by
 /level0-tagging
 /level0-cost
 /level0-healthcheck
-/assess-level0
+/check-level0
 ```
 
 ### Quarterly Review
 ```bash
-/assess-full
+/full-check
 /generate-report
 ```
 

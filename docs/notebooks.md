@@ -109,7 +109,7 @@ cp notebooks/investigations/performance-investigation-template.md \
    notebooks/investigations/my-incident-2026-07-10.md
 
 # Run assessment and use template
-/assess
+/quick-check
 ```
 
 ### Save to Datadog Notebook

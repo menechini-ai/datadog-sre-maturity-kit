@@ -4,10 +4,10 @@ List all available slash commands for the Datadog SRE Maturity Kit.
 
 ## 📊 Assessment Commands
 
-- **`/assess`** - Quick 10-minute maturity assessment
-- **`/assess-full`** - Comprehensive 30-minute assessment
-- **`/assess-level0`** - Level 0 (Foundation) readiness check
-- **`/assess-level1`** - Level 1 (Reactive) compliance check
+- **`/quick-check`** - Quick 10-minute maturity assessment
+- **`/full-check`** - Comprehensive 30-minute assessment
+- **`/check-level0`** - Level 0 (Foundation) readiness check
+- **`/check-level1`** - Level 1 (Reactive) compliance check
 
 ## 📍 Level 0 Commands
 
@@ -29,7 +29,7 @@ List all available slash commands for the Datadog SRE Maturity Kit.
 
 ## 📓 Notebook Commands (NEW)
 
-- **`/assess-to-notebook`** - Run assessment & save to Datadog Notebook
+- **`/check-to-notebook`** - Run assessment & save to Datadog Notebook
 - **`/save-to-notebook`** - Save any report to Datadog Notebook
 - **`/append-to-notebook`** - Append to existing notebook
 
@@ -43,7 +43,7 @@ List all available slash commands for the Datadog SRE Maturity Kit.
 
 ```bash
 # First time user
-/assess
+/quick-check
 
 # Level 0 discovery
 /level0-infra
@@ -54,11 +54,11 @@ List all available slash commands for the Datadog SRE Maturity Kit.
 /upgrade-plan
 
 # Executive reporting
-/assess-full
+/full-check
 /generate-report
 
 # Save to Datadog Notebook (NEW)
-/assess-to-notebook
+/check-to-notebook
 /save-to-notebook
 ```
 
@@ -73,7 +73,7 @@ List all available slash commands for the Datadog SRE Maturity Kit.
 
 If you don't see the commands when typing `/`:
 1. Make sure you're in the correct directory
-2. Try typing the full command name (e.g., `/assess`)
+2. Try typing the full command name (e.g., `/quick-check`)
 3. Check that `.claude/commands/` directory exists
 4. Restart Claude Code if needed
 

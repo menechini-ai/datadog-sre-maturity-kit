@@ -195,7 +195,7 @@ When running these commands, reference operational standards for detailed guidan
 
 | Command | References | Why |
 |---------|-----------|-----|
-| `/assess-level1` | All Level 1 standards | Validate deployment |
+| `/check-level1` | All Level 1 standards | Validate deployment |
 
 ---
 
@@ -324,7 +324,7 @@ When running these commands, reference operational standards for detailed guidan
 | Command | References | Why |
 |---------|-----------|-----|
 | `/level2-tagging` | Tagging Strategy | UST compliance validation |
-| `/assess-level2` | All Level 2 standards | Full validation |
+| `/check-level2` | All Level 2 standards | Full validation |
 
 ---
 
@@ -565,12 +565,12 @@ When running assessments, consult operational standards to understand gaps:
 
 **Example workflow for Level 2 advancement**:
 
-1. Run `/assess` → Discover you're at Level 1, need Level 2
+1. Run `/quick-check` → Discover you're at Level 1, need Level 2
 2. Run `/gap-analysis` → Identifies "Tagging compliance 45%, need 95%"
 3. **Consult**: [operational-standards-tagging-strategy.md](../notebooks/operational-standards-tagging-strategy.md)
 4. Implement UST tags using guide
 5. Run `/level2-tagging` → Validate progress
-6. Run `/assess-level2` → Confirm graduation
+6. Run `/check-level2` → Confirm graduation
 
 ---
 
@@ -600,7 +600,7 @@ Operational standards serve as training materials:
 2. Read [Access Management](../notebooks/02-operational-standards-access-management.md) - RBAC basics
 3. Run `/level0-healthcheck` to baseline
 4. Implement based on guides
-5. Validate with `/assess-level1`
+5. Validate with `/check-level1`
 
 **Level 1 → 2 Training Path**:
 1. Read [Tagging Strategy](../notebooks/operational-standards-tagging-strategy.md) - **START HERE**
@@ -608,7 +608,7 @@ Operational standards serve as training materials:
 3. Read [Dashboard Standards](../notebooks/05-operational-standards-data-visualization.md)
 4. Run `/level2-tagging` to audit current state
 5. Implement based on guides
-6. Validate with `/assess-level2`
+6. Validate with `/check-level2`
 
 ---
 
@@ -618,10 +618,10 @@ Operational standards serve as training materials:
 
 | Command | Operational Standards to Reference |
 |---------|-----------------------------------|
-| `/assess` | All standards (for comprehensive understanding) |
-| `/assess-full` | All standards (detailed assessment) |
-| `/assess-level0` | Platform Prep, Tagging, Governance |
-| `/assess-level1` | Platform Prep, Access, Monitoring, Visualization |
+| `/quick-check` | All standards (for comprehensive understanding) |
+| `/full-check` | All standards (detailed assessment) |
+| `/check-level0` | Platform Prep, Tagging, Governance |
+| `/check-level1` | Platform Prep, Access, Monitoring, Visualization |
 | `/gap-analysis` | Standards relevant to target level |
 | `/upgrade-plan` | Standards relevant to next level |
 
@@ -700,7 +700,7 @@ This single operational standard is the **#1 blocker** for Level 2 → Level 3 a
 ```
 ┌─────────────────────────────────────┐
 │  1. Run Assessment                  │
-│     /assess or /assess-full         │
+│     /quick-check or /full-check         │
 └──────────────┬──────────────────────┘
                │
                ▼
@@ -728,7 +728,7 @@ This single operational standard is the **#1 blocker** for Level 2 → Level 3 a
 ┌─────────────────────────────────────┐
 │  5. Validate Progress               │
 │     /level2-tagging → 90% ✅        │
-│     /assess → Level 2 achieved ✅   │
+│     /quick-check → Level 2 achieved ✅   │
 └─────────────────────────────────────┘
 ```
 

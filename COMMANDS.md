@@ -8,10 +8,10 @@ Complete reference for all available Claude Code slash commands in this reposito
 
 | Command | Purpose | Duration |
 |---------|---------|----------|
-| `/assess` | Quick maturity assessment | 10 min |
-| `/assess-full` | Comprehensive assessment | 30 min |
-| `/assess-to-notebook` | Assessment + save to Datadog Notebook | 12 min |
-| `/assess-level[N]` | Specific level assessment | 15 min |
+| `/quick-check` | Quick maturity assessment | 10 min |
+| `/full-check` | Comprehensive assessment | 30 min |
+| `/check-to-notebook` | Assessment + save to Datadog Notebook | 12 min |
+| `/check-level[N]` | Specific level assessment | 15 min |
 | `/level[N]-[task]` | Execute specific task | 10-20 min |
 | `/gap-analysis` | Identify gaps to next level | 10 min |
 | `/upgrade-plan` | Create upgrade roadmap | 15 min |
@@ -24,7 +24,7 @@ Complete reference for all available Claude Code slash commands in this reposito
 
 ## 📊 Assessment Commands
 
-### `/assess`
+### `/quick-check`
 **Quick SRE Maturity Assessment**
 
 Runs 10-minute quick assessment covering all 8 dimensions.
@@ -40,7 +40,7 @@ Runs 10-minute quick assessment covering all 8 dimensions.
 
 ---
 
-### `/assess-full`
+### `/full-check`
 **Comprehensive SRE Maturity Assessment**
 
 Runs 30-minute comprehensive assessment with detailed analysis.
@@ -57,7 +57,7 @@ Runs 30-minute comprehensive assessment with detailed analysis.
 
 ---
 
-### `/assess-level0`
+### `/check-level0`
 **Level 0: Foundation Assessment**
 
 Assesses readiness for Level 0 (Discovery & Planning).
@@ -78,7 +78,7 @@ Assesses readiness for Level 0 (Discovery & Planning).
 
 ---
 
-### `/assess-level1`
+### `/check-level1`
 **Level 1: Reactive Assessment**
 
 Assesses readiness for Level 1 (Initial Implementation).
@@ -358,7 +358,7 @@ Generate comprehensive notebook templates for common SRE workflows.
 
 ## 📓 Notebook Integration Commands
 
-### `/assess-to-notebook`
+### `/check-to-notebook`
 **Quick Assessment with Notebook**
 
 Run quick assessment and automatically save results to a Datadog Notebook for sharing and tracking.
@@ -467,10 +467,10 @@ Add new findings to an existing Datadog Notebook.
 ### Pattern 1: New to Datadog SRE Maturity Kit
 ```bash
 # Step 1: Quick assessment
-/assess
+/quick-check
 
 # Step 2: Based on results, run full assessment
-/assess-full
+/full-check
 
 # Step 3: Generate gap analysis
 /gap-analysis
@@ -482,7 +482,7 @@ Add new findings to an existing Datadog Notebook.
 ### Pattern 2: Monthly Check-in
 ```bash
 # Quick assessment
-/assess
+/quick-check
 
 # Compare to previous month
 # Review progress on action items
@@ -492,7 +492,7 @@ Add new findings to an existing Datadog Notebook.
 ### Pattern 3: Quarterly Review
 ```bash
 # Comprehensive assessment
-/assess-full
+/full-check
 
 # Generate executive report
 /generate-report
@@ -512,16 +512,16 @@ Add new findings to an existing Datadog Notebook.
 /level0-healthcheck
 
 # Assess Level 0 completion
-/assess-level0
+/check-level0
 ```
 
 ### Pattern 5: Validating Level Completion
 ```bash
 # For Level 1
-/assess-level1
+/check-level1
 
 # For Level 2
-/assess-level2
+/check-level2
 # ... etc
 ```
 
@@ -532,12 +532,12 @@ Add new findings to an existing Datadog Notebook.
 ### Best Practices
 
 1. **Start Simple**
-   - Begin with `/assess` for quick overview
-   - Progress to `/assess-full` when ready
+   - Begin with `/quick-check` for quick overview
+   - Progress to `/full-check` when ready
 
 2. **Regular Cadence**
-   - Run `/assess` monthly
-   - Run `/assess-full` quarterly
+   - Run `/quick-check` monthly
+   - Run `/full-check` quarterly
    - Generate reports for stakeholders
 
 3. **Track Progress**
@@ -559,10 +559,10 @@ Add new findings to an existing Datadog Notebook.
 
 | Activity | Command | Recommended Frequency |
 |----------|---------|----------------------|
-| Quick check | `/assess` | Monthly |
-| Deep dive | `/assess-full` | Quarterly |
+| Quick check | `/quick-check` | Monthly |
+| Deep dive | `/full-check` | Quarterly |
 | Leadership update | `/generate-report` | Quarterly |
-| Level validation | `/assess-level[N]` | Before advancing |
+| Level validation | `/check-level[N]` | Before advancing |
 | Cost review | `/level3-cost` | Monthly (Level 3+) |
 | Tagging audit | `/level2-tagging` | Quarterly (Level 2+) |
 
@@ -588,7 +588,7 @@ Add new findings to an existing Datadog Notebook.
 
 4. **Check Prerequisites**
    - Some commands require previous commands
-   - Example: `/upgrade-plan` needs `/assess-full` first
+   - Example: `/upgrade-plan` needs `/full-check` first
 
 ### Getting Errors?
 
