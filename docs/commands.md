@@ -12,7 +12,7 @@ All 18 commands follow the [Anthropic Claude Code command format](https://code.c
 
 ## 📊 Assessment Commands
 
-### `/quick-check`
+### `/check-quick`
 
 ```yaml
 ---
@@ -42,7 +42,7 @@ Run a quick SRE maturity assessment covering all 8 dimensions:
 
 ---
 
-### `/full-check`
+### `/check-full`
 
 ```yaml
 ---
@@ -413,15 +413,15 @@ List all available slash commands for the Datadog SRE Maturity Kit, organized by
 
 ### New User
 ```bash
-/quick-check         # Quick assessment
-/full-check    # Deep dive
+/check-quick         # Quick assessment
+/check-full    # Deep dive
 /gap-analysis   # Identify gaps
 /upgrade-plan   # Create roadmap
 ```
 
 ### Monthly Check-in
 ```bash
-/quick-check         # Quick assessment
+/check-quick         # Quick assessment
 # Compare to previous month
 ```
 
@@ -436,7 +436,7 @@ List all available slash commands for the Datadog SRE Maturity Kit, organized by
 
 ### Quarterly Review
 ```bash
-/full-check
+/check-full
 /generate-report
 ```
 

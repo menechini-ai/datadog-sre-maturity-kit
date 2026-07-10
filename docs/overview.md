@@ -61,7 +61,7 @@ Datadog MCP Server connection for AI-driven observability queries. See [mcp-conf
 
 ```bash
 # 1. First assessment
-/quick-check
+/check-quick
 
 # 2. Level 0 discovery
 /level0-infra

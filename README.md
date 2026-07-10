@@ -57,7 +57,7 @@ This kit was built to bridge the gap between Datadog's raw capabilities and the 
 
 ### 🎮 Slash Commands for Claude Code
 
-- **Assessment Commands**: `/quick-check`, `/full-check`, `/check-level0`, `/check-level1`
+- **Assessment Commands**: `/check-quick`, `/check-full`, `/check-level0`, `/check-level1`
 - **Task Commands**: `/level0-infra`, `/level0-tagging`, `/level0-cost`, `/level0-healthcheck`, `/level2-tagging`, `/level3-cost`
 - **Utility Commands**: `/gap-analysis`, `/upgrade-plan`, `/generate-report`, `/create-starter-notebooks`, `/save-to-notebook`, `/append-to-notebook`, `/help`
 - **Smart Defaults**: Each command runs the right MCP queries, analyzes results, and formats output
@@ -103,7 +103,7 @@ This kit was built to bridge the gap between Datadog's raw capabilities and the 
 # 1. Open this project in Claude Code
 
 # 2. Run your first assessment
-/quick-check
+/check-quick
 
 # 3. Check a specific level
 /check-level0
@@ -120,8 +120,8 @@ See the [Quick Start Guide](./QUICKSTART.md) for a 5-minute walkthrough.
 
 | Command | Description |
 |---------|-------------|
-| `/quick-check` | Quick 10-minute maturity check across all levels |
-| `/full-check` | Comprehensive 30-minute deep-dive assessment |
+| `/check-quick` | Quick 10-minute maturity check across all levels |
+| `/check-full` | Comprehensive 30-minute deep-dive assessment |
 | `/check-level0` | Level 0 (Foundation) validation |
 | `/check-level1` | Level 1 (Standardization) validation |
 
@@ -271,7 +271,7 @@ For other Datadog sites, replace `us3` with your [site subdomain](https://docs.d
 
 1. Pick a maturity level or operational standard to work on
 2. Update the corresponding notebook or planning document
-3. Run `/quick-check` to validate your changes
+3. Run `/check-quick` to validate your changes
 4. Submit a pull request
 
 ---

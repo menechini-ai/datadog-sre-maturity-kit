@@ -8,8 +8,8 @@ Complete reference for all available Claude Code slash commands in this reposito
 
 | Command | Purpose | Duration |
 |---------|---------|----------|
-| `/quick-check` | Quick maturity assessment | 10 min |
-| `/full-check` | Comprehensive assessment | 30 min |
+| `/check-quick` | Quick maturity assessment | 10 min |
+| `/check-full` | Comprehensive assessment | 30 min |
 | `/check-to-notebook` | Assessment + save to Datadog Notebook | 12 min |
 | `/check-level[N]` | Specific level assessment | 15 min |
 | `/level[N]-[task]` | Execute specific task | 10-20 min |
@@ -24,7 +24,7 @@ Complete reference for all available Claude Code slash commands in this reposito
 
 ## 📊 Assessment Commands
 
-### `/quick-check`
+### `/check-quick`
 **Quick SRE Maturity Assessment**
 
 Runs 10-minute quick assessment covering all 8 dimensions.
@@ -40,7 +40,7 @@ Runs 10-minute quick assessment covering all 8 dimensions.
 
 ---
 
-### `/full-check`
+### `/check-full`
 **Comprehensive SRE Maturity Assessment**
 
 Runs 30-minute comprehensive assessment with detailed analysis.
@@ -467,10 +467,10 @@ Add new findings to an existing Datadog Notebook.
 ### Pattern 1: New to Datadog SRE Maturity Kit
 ```bash
 # Step 1: Quick assessment
-/quick-check
+/check-quick
 
 # Step 2: Based on results, run full assessment
-/full-check
+/check-full
 
 # Step 3: Generate gap analysis
 /gap-analysis
@@ -482,7 +482,7 @@ Add new findings to an existing Datadog Notebook.
 ### Pattern 2: Monthly Check-in
 ```bash
 # Quick assessment
-/quick-check
+/check-quick
 
 # Compare to previous month
 # Review progress on action items
@@ -492,7 +492,7 @@ Add new findings to an existing Datadog Notebook.
 ### Pattern 3: Quarterly Review
 ```bash
 # Comprehensive assessment
-/full-check
+/check-full
 
 # Generate executive report
 /generate-report
@@ -532,12 +532,12 @@ Add new findings to an existing Datadog Notebook.
 ### Best Practices
 
 1. **Start Simple**
-   - Begin with `/quick-check` for quick overview
-   - Progress to `/full-check` when ready
+   - Begin with `/check-quick` for quick overview
+   - Progress to `/check-full` when ready
 
 2. **Regular Cadence**
-   - Run `/quick-check` monthly
-   - Run `/full-check` quarterly
+   - Run `/check-quick` monthly
+   - Run `/check-full` quarterly
    - Generate reports for stakeholders
 
 3. **Track Progress**
@@ -559,8 +559,8 @@ Add new findings to an existing Datadog Notebook.
 
 | Activity | Command | Recommended Frequency |
 |----------|---------|----------------------|
-| Quick check | `/quick-check` | Monthly |
-| Deep dive | `/full-check` | Quarterly |
+| Quick check | `/check-quick` | Monthly |
+| Deep dive | `/check-full` | Quarterly |
 | Leadership update | `/generate-report` | Quarterly |
 | Level validation | `/check-level[N]` | Before advancing |
 | Cost review | `/level3-cost` | Monthly (Level 3+) |
@@ -588,7 +588,7 @@ Add new findings to an existing Datadog Notebook.
 
 4. **Check Prerequisites**
    - Some commands require previous commands
-   - Example: `/upgrade-plan` needs `/full-check` first
+   - Example: `/upgrade-plan` needs `/check-full` first
 
 ### Getting Errors?
 

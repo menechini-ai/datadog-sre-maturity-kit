@@ -243,7 +243,7 @@ Structured decision trees and analysis frameworks guide you through complex inve
 Use templates with Datadog SRE Maturity Kit commands:
 ```bash
 # Run assessment and use template
-/quick-check
+/check-quick
 
 # Use investigation template after detecting issue
 cp notebooks/investigations/performance-investigation-template.md investigation.md
@@ -265,7 +265,7 @@ Push completed notebooks to Datadog:
 
 ### Assessment Flow
 
-1. `/quick-check` → Use assessment template
+1. `/check-quick` → Use assessment template
 2. Identify gaps → Use investigation template
 3. Resolve issue → Use postmortem template
 4. Document learnings → Update runbook template

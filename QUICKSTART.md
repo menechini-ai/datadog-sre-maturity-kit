@@ -18,7 +18,7 @@ This spec kit supports **two command formats** - use whichever you prefer:
 
 #### Option A: Slash Commands (Direct) ⚡
 ```bash
-/quick-check
+/check-quick
 ```
 Fast, explicit commands that execute immediately.
 
@@ -48,7 +48,7 @@ Tell me about my Datadog organization. Query available hosts and services.
 
 **Slash command**:
 ```bash
-/quick-check
+/check-quick
 ```
 
 **Natural language**:
@@ -90,7 +90,7 @@ All commands are organized by purpose. Simply copy and paste into Claude Code:
 
 **Slash command**:
 ```bash
-/quick-check
+/check-quick
 ```
 
 **Natural language**:
@@ -104,7 +104,7 @@ Run quick maturity assessment covering all 8 dimensions
 
 **Slash command**:
 ```bash
-/full-check
+/check-full
 ```
 
 **Natural language**:
@@ -685,7 +685,7 @@ Level definitions: [planning/level-definitions.md](./planning/level-definitions.
 ### 1. "I'm new to this spec kit"
 **Run**:
 ```bash
-/quick-check
+/check-quick
 ```
 *Determines your current maturity level and provides next steps*
 
@@ -767,8 +767,8 @@ Track your progress:
 ### Assessment Commands
 | Command | Purpose | Time |
 |---------|---------|------|
-| `/quick-check` | Quick maturity check | 10 min |
-| `/full-check` | Comprehensive assessment | 30 min |
+| `/check-quick` | Quick maturity check | 10 min |
+| `/check-full` | Comprehensive assessment | 30 min |
 | `/check-level0` | Level 0 validation | 15 min |
 | `/check-level1` | Level 1 validation | 15 min |
 | `/gap-analysis` | Identify gaps to next level | 10 min |
@@ -810,7 +810,7 @@ For detailed command reference, see [COMMANDS.md](./COMMANDS.md)
 
 **Need Help?** Simply ask Claude: *"Show me available commands for [TASK]"*
 
-**Ready to start?** Run `/quick-check` now!
+**Ready to start?** Run `/check-quick` now!
 
 ---
 

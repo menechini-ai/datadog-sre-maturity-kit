@@ -186,7 +186,7 @@ Max score: 30 (6 capabilities × 5)
 
 1. Transfer scores to `gap-analysis-generator.md` for detailed gap analysis.
 2. Run `/upgrade-plan` to create an implementation roadmap.
-3. Run `/quick-check` to generate an executive report with these results.
+3. Run `/check-quick` to generate an executive report with these results.
 
 **MCP Validation**: Verify scorecard claims with live Datadog queries from the [MCP Query Library](mcp-query-library/).  
 **Tool Reference**: See [datadog-info/README.md](/datadog-info/README.md) for the complete MCP tool reference index.

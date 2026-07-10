@@ -4,8 +4,8 @@ List all available slash commands for the Datadog SRE Maturity Kit.
 
 ## 📊 Assessment Commands
 
-- **`/quick-check`** - Quick 10-minute maturity assessment
-- **`/full-check`** - Comprehensive 30-minute assessment
+- **`/check-quick`** - Quick 10-minute maturity assessment
+- **`/check-full`** - Comprehensive 30-minute assessment
 - **`/check-level0`** - Level 0 (Foundation) readiness check
 - **`/check-level1`** - Level 1 (Reactive) compliance check
 
@@ -43,7 +43,7 @@ List all available slash commands for the Datadog SRE Maturity Kit.
 
 ```bash
 # First time user
-/quick-check
+/check-quick
 
 # Level 0 discovery
 /level0-infra
@@ -54,7 +54,7 @@ List all available slash commands for the Datadog SRE Maturity Kit.
 /upgrade-plan
 
 # Executive reporting
-/full-check
+/check-full
 /generate-report
 
 # Save to Datadog Notebook (NEW)
@@ -73,7 +73,7 @@ List all available slash commands for the Datadog SRE Maturity Kit.
 
 If you don't see the commands when typing `/`:
 1. Make sure you're in the correct directory
-2. Try typing the full command name (e.g., `/quick-check`)
+2. Try typing the full command name (e.g., `/check-quick`)
 3. Check that `.claude/commands/` directory exists
 4. Restart Claude Code if needed
 

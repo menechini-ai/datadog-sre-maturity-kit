@@ -63,7 +63,7 @@ tags: [report, executive, business, leadership]
 
 **Queries for data**:
 ```
-# Run /quick-check or /full-check command
+# Run /check-quick or /check-full command
 # Or manually query each dimension
 ```
 

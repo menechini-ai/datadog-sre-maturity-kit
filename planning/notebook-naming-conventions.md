@@ -40,8 +40,8 @@ Level [N] - [Level Name] - [Report Type] - YYYY-MM-DD
 
 | Command | Notebook Name Format | Example |
 |---------|---------------------|----------|
-| `/quick-check` | `Level [N] - [Level Name] - Quick Assessment - YYYY-MM-DD` | `Level 2 - Optimization - Quick Assessment - 2026-07-10` |
-| `/full-check` | `Level [N] - [Level Name] - Comprehensive Assessment - YYYY-MM-DD` | `Level 2 - Optimization - Comprehensive Assessment - 2026-07-10` |
+| `/check-quick` | `Level [N] - [Level Name] - Quick Assessment - YYYY-MM-DD` | `Level 2 - Optimization - Quick Assessment - 2026-07-10` |
+| `/check-full` | `Level [N] - [Level Name] - Comprehensive Assessment - YYYY-MM-DD` | `Level 2 - Optimization - Comprehensive Assessment - 2026-07-10` |
 | `/check-level0` | `Level 0 - Foundation - Validation Report - YYYY-MM-DD` | `Level 0 - Foundation - Validation Report - 2026-07-10` |
 | `/check-level1` | `Level 1 - Standardization - Validation Report - YYYY-MM-DD` | `Level 1 - Standardization - Validation Report - 2026-07-10` |
 

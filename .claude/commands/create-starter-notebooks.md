@@ -121,7 +121,7 @@ Templates are markdown files that you can:
 ## 💡 Integration with Existing Commands
 
 Templates work seamlessly with:
-- `/quick-check` → Use assessment templates
+- `/check-quick` → Use assessment templates
 - `/level0-infra` → Use investigation templates
 - `/gap-analysis` → Use report templates
 - `/save-to-notebook` → Push completed notebooks to Datadog

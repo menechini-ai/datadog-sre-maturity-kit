@@ -7,8 +7,8 @@ This directory contains custom slash commands for the Datadog SRE Maturity Kit.
 Type `/` in Claude Code to see all available commands, or type `/help` for a complete list.
 
 ### Assessment Commands (4)
-- `/quick-check` - Quick assessment
-- `/full-check` - Comprehensive assessment
+- `/check-quick` - Quick assessment
+- `/check-full` - Comprehensive assessment
 - `/check-level0` - Level 0 check
 - `/check-level1` - Level 1 check
 
@@ -30,7 +30,7 @@ Type `/` in Claude Code to see all available commands, or type `/help` for a com
 Simply type `/` followed by the command name in Claude Code:
 
 ```
-/quick-check
+/check-quick
 ```
 
 All commands will:

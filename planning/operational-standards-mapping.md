@@ -565,7 +565,7 @@ When running assessments, consult operational standards to understand gaps:
 
 **Example workflow for Level 2 advancement**:
 
-1. Run `/quick-check` → Discover you're at Level 1, need Level 2
+1. Run `/check-quick` → Discover you're at Level 1, need Level 2
 2. Run `/gap-analysis` → Identifies "Tagging compliance 45%, need 95%"
 3. **Consult**: [operational-standards-tagging-strategy.md](../notebooks/operational-standards-tagging-strategy.md)
 4. Implement UST tags using guide
@@ -618,8 +618,8 @@ Operational standards serve as training materials:
 
 | Command | Operational Standards to Reference |
 |---------|-----------------------------------|
-| `/quick-check` | All standards (for comprehensive understanding) |
-| `/full-check` | All standards (detailed assessment) |
+| `/check-quick` | All standards (for comprehensive understanding) |
+| `/check-full` | All standards (detailed assessment) |
 | `/check-level0` | Platform Prep, Tagging, Governance |
 | `/check-level1` | Platform Prep, Access, Monitoring, Visualization |
 | `/gap-analysis` | Standards relevant to target level |
@@ -700,7 +700,7 @@ This single operational standard is the **#1 blocker** for Level 2 → Level 3 a
 ```
 ┌─────────────────────────────────────┐
 │  1. Run Assessment                  │
-│     /quick-check or /full-check         │
+│     /check-quick or /check-full         │
 └──────────────┬──────────────────────┘
                │
                ▼
@@ -728,7 +728,7 @@ This single operational standard is the **#1 blocker** for Level 2 → Level 3 a
 ┌─────────────────────────────────────┐
 │  5. Validate Progress               │
 │     /level2-tagging → 90% ✅        │
-│     /quick-check → Level 2 achieved ✅   │
+│     /check-quick → Level 2 achieved ✅   │
 └─────────────────────────────────────┘
 ```
 
