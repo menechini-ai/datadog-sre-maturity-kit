@@ -293,3 +293,7 @@ All detailed documentation is in the [`docs/`](./docs/) directory:
 **Version**: 1.0
 **Last Updated**: 2026-07-10
 **Maintained By**: SRE Platform Team
+
+---
+
+*This project is a fork of [nuttea/spec-kit-sre-datadog](https://github.com/nuttea/spec-kit-sre-datadog/tree/main), the original SRE Spec Kit for Datadog.*
