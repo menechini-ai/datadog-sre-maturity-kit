@@ -2,13 +2,11 @@
 
 Deep-dive investigation of a specific Datadog incident — correlates events, APM traces, error logs, monitors, and security signals around the incident timeframe.
 
-> **Required**: Ask the user for the `incident_id` and at minimum `service` and `env` tags.
+> **Required**: Ask the user for the `incident_id`.
 > ```
 > incident_id: <incident_id>     # e.g. "123456789"
-> service:     <service_name>    # e.g. "api-gateway"
-> env:         <environment>     # e.g. "prod"
 > ```
-> The command will also extract additional tags from the incident's own context to scope downstream queries.
+> Tags (`service`, `env`, etc.) are extracted directly from the incident context via `get_datadog_incident()` — no need to ask separately.
 >
 > **Reference**: [MCP Tools](../../datadog-info/README.md) | [Core Tools](../../datadog-info/core-tools.md)
 
@@ -42,7 +40,7 @@ Extract from the response:
 
 **Step 2: Parallel Signal Correlation**
 
-Use the timeframe and tags from Step 1 to scope all queries below.
+Use the timeframe and tags extracted from the incident (Step 1) to scope all queries below.
 Run these in **parallel** — they are independent.
 
 **A. Events** (deployments, alerts, infrastructure changes)
