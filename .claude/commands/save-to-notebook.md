@@ -1,3 +1,28 @@
+---
+description: Save any report or findings to a Datadog Notebook
+argument-hint: [notebook-id]
+allowed-tools: Read, Bash
+model: haiku
+---
+
+<!--
+COMMAND: save-to-notebook
+VERSION: 1.0.0
+LAST UPDATED: 2026-07-10
+
+PURPOSE:
+  Save any report or findings to a Datadog Notebook
+
+USAGE:
+  /save-to-notebook [notebook-id]
+
+REQUIREMENTS:
+  - Datadog MCP server configured (mcp.json)
+  - User must provide required tags (service, env)
+
+RELATED COMMANDS:
+  /help - List all commands
+-->
 # Save Report to Datadog Notebook
 
 Utility command to save any report or findings to a Datadog Notebook.

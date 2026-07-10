@@ -1,3 +1,27 @@
+---
+description: Level 0 Foundation readiness assessment (15 min)
+allowed-tools: Read, Bash
+model: sonnet
+---
+
+<!--
+COMMAND: check-level0
+VERSION: 1.0.0
+LAST UPDATED: 2026-07-10
+
+PURPOSE:
+  Level 0 Foundation readiness assessment (15 min)
+
+USAGE:
+  /check-level0 
+
+REQUIREMENTS:
+  - Datadog MCP server configured (mcp.json)
+  - User must provide required tags (service, env)
+
+RELATED COMMANDS:
+  /help - List all commands
+-->
 # Level 0: Foundation Assessment
 
 Assess readiness for Level 0 (Foundation - Discovery & Planning phase).

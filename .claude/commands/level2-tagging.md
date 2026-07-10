@@ -1,3 +1,27 @@
+---
+description: Check Level 2 tagging compliance (target ≥95% Unified Service Tagging)
+allowed-tools: Read, Bash
+model: sonnet
+---
+
+<!--
+COMMAND: level2-tagging
+VERSION: 1.0.0
+LAST UPDATED: 2026-07-10
+
+PURPOSE:
+  Check Level 2 tagging compliance (target ≥95% Unified Service Tagging)
+
+USAGE:
+  /level2-tagging 
+
+REQUIREMENTS:
+  - Datadog MCP server configured (mcp.json)
+  - User must provide required tags (service, env)
+
+RELATED COMMANDS:
+  /help - List all commands
+-->
 # Level 2: Tagging Compliance Check
 
 Execute comprehensive tagging compliance check for Level 2 (Proactive).

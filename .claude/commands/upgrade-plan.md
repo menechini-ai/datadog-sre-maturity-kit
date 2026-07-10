@@ -1,3 +1,27 @@
+---
+description: Create step-by-step upgrade roadmap to target maturity level
+allowed-tools: Read, Bash
+model: sonnet
+---
+
+<!--
+COMMAND: upgrade-plan
+VERSION: 1.0.0
+LAST UPDATED: 2026-07-10
+
+PURPOSE:
+  Create step-by-step upgrade roadmap to target maturity level
+
+USAGE:
+  /upgrade-plan 
+
+REQUIREMENTS:
+  - Datadog MCP server configured (mcp.json)
+  - User must provide required tags (service, env)
+
+RELATED COMMANDS:
+  /help - List all commands
+-->
 # Upgrade Plan Generator
 
 Generate step-by-step upgrade plan from current level to next level.

@@ -1,3 +1,27 @@
+---
+description: Analyze cost optimization opportunities targeting 20%+ reduction
+allowed-tools: Read, Bash
+model: sonnet
+---
+
+<!--
+COMMAND: level3-cost
+VERSION: 1.0.0
+LAST UPDATED: 2026-07-10
+
+PURPOSE:
+  Analyze cost optimization opportunities targeting 20%+ reduction
+
+USAGE:
+  /level3-cost 
+
+REQUIREMENTS:
+  - Datadog MCP server configured (mcp.json)
+  - User must provide required tags (service, env)
+
+RELATED COMMANDS:
+  /help - List all commands
+-->
 # Level 3: Cost Optimization Analysis
 
 Execute comprehensive cost optimization analysis for Level 3 (Managed).

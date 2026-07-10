@@ -1,3 +1,27 @@
+---
+description: Generate all 14 starter Datadog Notebook templates
+allowed-tools: Read, Bash
+model: haiku
+---
+
+<!--
+COMMAND: create-starter-notebooks
+VERSION: 1.0.0
+LAST UPDATED: 2026-07-10
+
+PURPOSE:
+  Generate all 14 starter Datadog Notebook templates
+
+USAGE:
+  /create-starter-notebooks 
+
+REQUIREMENTS:
+  - Datadog MCP server configured (mcp.json)
+  - User must provide required tags (service, env)
+
+RELATED COMMANDS:
+  /help - List all commands
+-->
 # Create Starter Notebooks
 
 Generate starter notebook templates in `notebooks/` directory for common SRE observability workflows.

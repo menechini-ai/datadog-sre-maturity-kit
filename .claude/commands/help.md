@@ -1,3 +1,27 @@
+---
+description: List all available slash commands in this repository
+allowed-tools: Read
+model: haiku
+---
+
+<!--
+COMMAND: help
+VERSION: 1.0.0
+LAST UPDATED: 2026-07-10
+
+PURPOSE:
+  List all available slash commands in this repository
+
+USAGE:
+  /help 
+
+REQUIREMENTS:
+  - Datadog MCP server configured (mcp.json)
+  - User must provide required tags (service, env)
+
+RELATED COMMANDS:
+  /help - List all commands
+-->
 # Available Datadog SRE Maturity Kit Commands
 
 List all available slash commands for the Datadog SRE Maturity Kit.

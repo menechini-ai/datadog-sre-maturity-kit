@@ -1,3 +1,27 @@
+---
+description: Identify gaps between current and target maturity level
+allowed-tools: Read, Bash
+model: sonnet
+---
+
+<!--
+COMMAND: gap-analysis
+VERSION: 1.0.0
+LAST UPDATED: 2026-07-10
+
+PURPOSE:
+  Identify gaps between current and target maturity level
+
+USAGE:
+  /gap-analysis 
+
+REQUIREMENTS:
+  - Datadog MCP server configured (mcp.json)
+  - User must provide required tags (service, env)
+
+RELATED COMMANDS:
+  /help - List all commands
+-->
 # Gap Analysis Generator
 
 Generate comprehensive gap analysis between current level and target level.

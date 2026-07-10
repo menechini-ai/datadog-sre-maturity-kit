@@ -1,3 +1,27 @@
+---
+description: Generate executive summary SRE maturity report
+allowed-tools: Read, Bash
+model: sonnet
+---
+
+<!--
+COMMAND: generate-report
+VERSION: 1.0.0
+LAST UPDATED: 2026-07-10
+
+PURPOSE:
+  Generate executive summary SRE maturity report
+
+USAGE:
+  /generate-report 
+
+REQUIREMENTS:
+  - Datadog MCP server configured (mcp.json)
+  - User must provide required tags (service, env)
+
+RELATED COMMANDS:
+  /help - List all commands
+-->
 # Generate Executive Report
 
 Generate executive-level maturity report suitable for leadership presentation.

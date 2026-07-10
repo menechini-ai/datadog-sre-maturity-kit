@@ -1,3 +1,27 @@
+---
+description: Comprehensive 30-min SRE maturity deep-dive with gap analysis
+allowed-tools: Read, Bash
+model: sonnet
+---
+
+<!--
+COMMAND: check-full
+VERSION: 1.0.0
+LAST UPDATED: 2026-07-10
+
+PURPOSE:
+  Comprehensive 30-min SRE maturity deep-dive with gap analysis
+
+USAGE:
+  /check-full 
+
+REQUIREMENTS:
+  - Datadog MCP server configured (mcp.json)
+  - User must provide required tags (service, env)
+
+RELATED COMMANDS:
+  /help - List all commands
+-->
 # Comprehensive SRE Maturity Assessment
 
 Run a comprehensive SRE maturity assessment (30 minutes) with detailed analysis.

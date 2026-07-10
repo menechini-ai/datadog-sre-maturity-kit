@@ -1,3 +1,28 @@
+---
+description: Append new findings or updates to an existing Datadog Notebook
+argument-hint: [notebook-id]
+allowed-tools: Read, Bash
+model: haiku
+---
+
+<!--
+COMMAND: append-to-notebook
+VERSION: 1.0.0
+LAST UPDATED: 2026-07-10
+
+PURPOSE:
+  Append new findings or updates to an existing Datadog Notebook
+
+USAGE:
+  /append-to-notebook [notebook-id]
+
+REQUIREMENTS:
+  - Datadog MCP server configured (mcp.json)
+  - User must provide required tags (service, env)
+
+RELATED COMMANDS:
+  /help - List all commands
+-->
 # Append to Existing Notebook
 
 Add new findings or updates to an existing Datadog Notebook. Useful for ongoing investigations or tracking progress over time.

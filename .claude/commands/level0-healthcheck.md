@@ -1,3 +1,27 @@
+---
+description: Generate comprehensive Level 0 health check report from all discoveries
+allowed-tools: Read, Bash
+model: sonnet
+---
+
+<!--
+COMMAND: level0-healthcheck
+VERSION: 1.0.0
+LAST UPDATED: 2026-07-10
+
+PURPOSE:
+  Generate comprehensive Level 0 health check report from all discoveries
+
+USAGE:
+  /level0-healthcheck 
+
+REQUIREMENTS:
+  - Datadog MCP server configured (mcp.json)
+  - User must provide required tags (service, env)
+
+RELATED COMMANDS:
+  /help - List all commands
+-->
 # Level 0: Generate Health Check Report
 
 Generate comprehensive Level 0 health check report combining all discovery findings.

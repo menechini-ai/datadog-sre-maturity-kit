@@ -1,3 +1,27 @@
+---
+description: Run maturity assessment and save results to a Datadog Notebook
+allowed-tools: Read, Bash
+model: sonnet
+---
+
+<!--
+COMMAND: check-to-notebook
+VERSION: 1.0.0
+LAST UPDATED: 2026-07-10
+
+PURPOSE:
+  Run maturity assessment and save results to a Datadog Notebook
+
+USAGE:
+  /check-to-notebook 
+
+REQUIREMENTS:
+  - Datadog MCP server configured (mcp.json)
+  - User must provide required tags (service, env)
+
+RELATED COMMANDS:
+  /help - List all commands
+-->
 # Quick Assessment with Notebook
 
 Run a quick SRE maturity assessment (10 minutes) and save results to a Datadog Notebook for sharing and tracking.

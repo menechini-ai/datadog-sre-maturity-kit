@@ -1,3 +1,27 @@
+---
+description: Quick 10-min SRE maturity assessment across 8 dimensions
+allowed-tools: Read, Bash
+model: sonnet
+---
+
+<!--
+COMMAND: check-quick
+VERSION: 1.0.0
+LAST UPDATED: 2026-07-10
+
+PURPOSE:
+  Quick 10-min SRE maturity assessment across 8 dimensions
+
+USAGE:
+  /check-quick 
+
+REQUIREMENTS:
+  - Datadog MCP server configured (mcp.json)
+  - User must provide required tags (service, env)
+
+RELATED COMMANDS:
+  /help - List all commands
+-->
 # Quick SRE Maturity Assessment
 
 > **Reference**: [MCP Tools](../../datadog-info/README.md) | [Scorecard](../../assessment-tools/maturity-scorecard.md)

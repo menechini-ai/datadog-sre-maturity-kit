@@ -1,3 +1,27 @@
+---
+description: Execute comprehensive tagging audit for Level 0 Foundation
+allowed-tools: Read, Bash
+model: haiku
+---
+
+<!--
+COMMAND: level0-tagging
+VERSION: 1.0.0
+LAST UPDATED: 2026-07-10
+
+PURPOSE:
+  Execute comprehensive tagging audit for Level 0 Foundation
+
+USAGE:
+  /level0-tagging 
+
+REQUIREMENTS:
+  - Datadog MCP server configured (mcp.json)
+  - User must provide required tags (service, env)
+
+RELATED COMMANDS:
+  /help - List all commands
+-->
 # Level 0: Tagging Audit
 
 Execute comprehensive tagging audit for Level 0 (Foundation).

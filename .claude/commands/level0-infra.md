@@ -1,3 +1,27 @@
+---
+description: Execute infrastructure discovery and inventory for Level 0
+allowed-tools: Read, Bash
+model: haiku
+---
+
+<!--
+COMMAND: level0-infra
+VERSION: 1.0.0
+LAST UPDATED: 2026-07-10
+
+PURPOSE:
+  Execute infrastructure discovery and inventory for Level 0
+
+USAGE:
+  /level0-infra 
+
+REQUIREMENTS:
+  - Datadog MCP server configured (mcp.json)
+  - User must provide required tags (service, env)
+
+RELATED COMMANDS:
+  /help - List all commands
+-->
 # Level 0: Infrastructure Discovery
 
 Execute comprehensive infrastructure discovery and inventory for Level 0 (Foundation).

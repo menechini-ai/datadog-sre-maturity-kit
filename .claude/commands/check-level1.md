@@ -1,3 +1,27 @@
+---
+description: Level 1 Reactive readiness and compliance assessment (15 min)
+allowed-tools: Read, Bash
+model: sonnet
+---
+
+<!--
+COMMAND: check-level1
+VERSION: 1.0.0
+LAST UPDATED: 2026-07-10
+
+PURPOSE:
+  Level 1 Reactive readiness and compliance assessment (15 min)
+
+USAGE:
+  /check-level1 
+
+REQUIREMENTS:
+  - Datadog MCP server configured (mcp.json)
+  - User must provide required tags (service, env)
+
+RELATED COMMANDS:
+  /help - List all commands
+-->
 # Level 1: Reactive Assessment
 
 Assess readiness and compliance for Level 1 (Reactive - Initial Implementation).

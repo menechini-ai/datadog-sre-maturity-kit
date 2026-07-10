@@ -1,3 +1,28 @@
+---
+description: Deep-dive investigation correlating 5 signals around a Datadog incident
+argument-hint: [incident-id]
+allowed-tools: Read, Bash
+model: sonnet
+---
+
+<!--
+COMMAND: investigate-incident
+VERSION: 1.0.0
+LAST UPDATED: 2026-07-10
+
+PURPOSE:
+  Deep-dive investigation correlating 5 signals around a Datadog incident
+
+USAGE:
+  /investigate-incident [incident-id]
+
+REQUIREMENTS:
+  - Datadog MCP server configured (mcp.json)
+  - User must provide required tags (service, env)
+
+RELATED COMMANDS:
+  /help - List all commands
+-->
 # Investigate Incident
 
 Deep-dive investigation of a specific Datadog incident — correlates events, APM traces, error logs, monitors, and security signals around the incident timeframe.
