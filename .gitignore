@@ -1,0 +1,26 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Environment / secrets
+.env
+.env.*
+*.key
+*.pem
+
+# Logs
+*.log
+
+# Python (caso scripts de automação sejam adicionados futuramente)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node (caso tooling JS seja adicionado)
+node_modules/

@@ -1,0 +1,103 @@
+From 3f5d0e125a9a90ceda94b1fb63972049eae4b250 Mon Sep 17 00:00:00 2001
+From: Claude <claude@anthropic.com>
+Date: Fri, 10 Jul 2026 11:51:43 +0000
+Subject: [PATCH 4/4] docs: corrigir contagem de slash commands (19 -> 18)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+.claude/commands/ contém 18 arquivos de comando (excluindo o README
+da própria pasta), não 19 como indicado. A categoria 'Utilities'
+listava 3 no título mas apenas 2 comandos (/help e
+/append-to-notebook). Corrigido em README.md (badge, texto e árvore
+de diretórios), QUICKSTART.md e PLAN.md.
+---
+ PLAN.md       |  2 +-
+ QUICKSTART.md |  2 +-
+ README.md     | 12 ++++++------
+ 3 files changed, 8 insertions(+), 8 deletions(-)
+
+diff --git a/PLAN.md b/PLAN.md
+index 66af843..d9742f9 100644
+--- a/PLAN.md
++++ b/PLAN.md
+@@ -699,7 +699,7 @@ assessment-tools/
+ | Additional Commands | 🔴 0% | P2-P3 | Not started |
+ 
+ **Key Achievements**:
+-- ✅ 19 slash commands created and documented
++- ✅ 18 slash commands created and documented
+ - ✅ 14 notebook templates operational
+ - ✅ Complete assessment framework
+ - ✅ Planning and methodology documented
+diff --git a/QUICKSTART.md b/QUICKSTART.md
+index ac2397a..dcfb100 100644
+--- a/QUICKSTART.md
++++ b/QUICKSTART.md
+@@ -802,7 +802,7 @@ Track your progress:
+ |---------|---------|------|
+ | `/help` | List all commands | instant |
+ 
+-**Total**: 19 slash commands available
++**Total**: 18 slash commands available
+ 
+ For detailed command reference, see [COMMANDS.md](./COMMANDS.md)
+ 
+diff --git a/README.md b/README.md
+index aa663d1..9e0b254 100644
+--- a/README.md
++++ b/README.md
+@@ -3,7 +3,7 @@
+ **A comprehensive maturity assessment and implementation framework for Datadog observability**
+ 
+ ![Maturity Levels](https://img.shields.io/badge/Maturity%20Levels-6%20(0--5)-blue)
+-![Commands](https://img.shields.io/badge/Slash%20Commands-19-green)
++![Commands](https://img.shields.io/badge/Slash%20Commands-18-green)
+ ![Notebook Templates](https://img.shields.io/badge/Notebook%20Templates-14-orange)
+ 
+ ---
+@@ -18,7 +18,7 @@
+ ```
+ 
+ **Already familiar?** Jump to:
+-- [Command Reference](./COMMANDS.md) - All 19 slash commands
++- [Command Reference](./COMMANDS.md) - All 18 slash commands
+ - [Level Definitions](./planning/level-definitions.md) - Detailed maturity criteria
+ - [Implementation Plan](./PLAN.md) - Project roadmap and status
+ 
+@@ -90,12 +90,12 @@ Generate and share results:
+ - `/assess-to-notebook` - Assessment with Datadog export
+ - `/create-starter-notebooks` - Generate 14 template files
+ 
+-### Utilities (3 commands)
++### Utilities (2 commands)
+ Helper commands:
+ - `/help` - List all available commands
+ - `/append-to-notebook` - Append to existing Datadog Notebook
+ 
+-**Total**: 19 slash commands
++**Total**: 18 slash commands
+ 
+ See [COMMANDS.md](./COMMANDS.md) for detailed command reference.
+ 
+@@ -163,7 +163,7 @@ spec-kit-sre-datadog/
+ ├── CLAUDE.md                   ← Claude Code integration guide
+ │
+ ├── .claude/
+-│   └── commands/              ← 19 slash commands
++│   └── commands/              ← 18 slash commands
+ │       ├── assess.md
+ │       ├── assess-full.md
+ │       ├── level0-infra.md
+@@ -419,7 +419,7 @@ Track your SRE maturity journey:
+ ### ✅ Completed (Phases 1-7)
+ - Planning and methodology documentation
+ - Level definitions (Levels 0-5)
+-- 19 slash commands
++- 18 slash commands
+ - 14 notebook templates
+ - Assessment framework
+ - Quick start guide
+-- 
+2.43.0
+
