@@ -10,7 +10,7 @@ Execute comprehensive cost optimization analysis for Level 3 (Managed).
 ```
 get_datadog_metric(
     context="Level 3: Current cloud spend analysis",
-    queries=["sum:all.cost{*}.rollup(sum, monthly)"],
+    queries=["sum:all.cost{env:<env>}.rollup(sum, monthly)"],
     use_cloud_cost=True,
     from="now-90d"
 )
@@ -20,7 +20,7 @@ get_datadog_metric(
 ```
 get_datadog_metric(
     context="Cost breakdown by service",
-    queries=["sum:all.cost{*} by {service}.rollup(sum, daily)"],
+    queries=["sum:all.cost{env:<env>} by {service}.rollup(sum, daily)"],
     use_cloud_cost=True,
     from="now-30d"
 )
@@ -30,7 +30,7 @@ get_datadog_metric(
 ```
 get_datadog_metric(
     context="Cost breakdown by team",
-    queries=["sum:all.cost{*} by {team}.rollup(sum, daily)"],
+    queries=["sum:all.cost{env:<env>} by {team}.rollup(sum, daily)"],
     use_cloud_cost=True,
     from="now-30d"
 )
@@ -42,13 +42,13 @@ get_datadog_metric(
 ```
 get_datadog_metric(
     context="Find low-traffic services",
-    queries=["sum:trace.requests{*} by {service}"],
+    queries=["sum:trace.requests{env:<env>} by {service}"],
     from="now-30d"
 )
 
 search_datadog_services(
-    context="Service catalog analysis",
-    query="*"
+    context="Service catalog analysis in environment",
+    filter="env:<env>"
 )
 ```
 
@@ -61,14 +61,14 @@ Identify services with:
 ```
 search_datadog_logs(
     context="High-volume log sources",
-    query="*",
+    query="env:<env>",
     from="now-24h",
-    indexes=["*"]
+    indexes=["main"]
 )
 
 analyze_datadog_logs(
     context="Log pattern analysis for exclusion",
-    filter="*",
+    filter="env:<env>",
     from="now-24h"
 )
 ```
@@ -83,7 +83,7 @@ Identify:
 ```
 search_datadog_metrics(
     context="High cardinality metrics",
-    query="*"
+    query="env:<env>"
 )
 ```
 

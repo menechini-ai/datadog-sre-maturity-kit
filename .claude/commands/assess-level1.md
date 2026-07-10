@@ -12,8 +12,8 @@ Assess readiness and compliance for Level 1 (Reactive - Initial Implementation).
 **Execute these checks:**
 
 1. **Agent Deployment Coverage** (Target: ≥80%)
-   - Query: `search_datadog_hosts(filter="*")`
-   - Query: `get_datadog_metric(queries=["count:datadog.agent.running{*} by {env}"])`
+   - Query: `search_datadog_hosts(filter="env:<env>")`
+   - Query: `get_datadog_metric(queries=["count:datadog.agent.running{env:<env>} by {env}"])`
    - Calculate coverage percentage
    - Identify gaps by environment
    - Status: ✅ Pass (≥80%) / ❌ Fail (<80%)
@@ -26,21 +26,21 @@ Assess readiness and compliance for Level 1 (Reactive - Initial Implementation).
    - Status: ✅ Pass (≥5 monitors) / ❌ Fail (<5)
 
 3. **Dashboard Creation** (Target: Core dashboards exist)
-   - Query: `search_datadog_dashboards(query="*")`
+   - Query: `search_datadog_dashboards(query="env:<env>")`
    - Verify infrastructure dashboard exists
    - Check service health dashboard
    - Validate log overview dashboard
    - Status: ✅ Pass (≥3 dashboards) / ❌ Fail (<3)
 
 4. **Log Collection** (Target: Production services logging)
-   - Query: `search_datadog_logs(query="env:prod", from="now-24h")`
+   - Query: `search_datadog_logs(query="env:<env>", from="now-24h")`
    - Verify log sources from production
    - Check log volume consistency
    - Identify services not logging
    - Status: ✅ Pass (logs flowing) / ❌ Fail (no logs)
 
 5. **Incident Tracking** (Target: Process documented)
-   - Query: `search_datadog_incidents(query="*", from="now-30d")`
+   - Query: `search_datadog_incidents(query="env:<env>", from="now-30d")`
    - Verify incidents are being tracked
    - Check MTTR baseline exists
    - Validate on-call rotation

@@ -20,7 +20,7 @@ This operational standard provides:
 ```
 search_datadog_hosts(
     context="Level 2: Comprehensive tagging compliance audit",
-    filter="*",
+    filter="service:<service>,env:<env>",
     include_all_tags=True,
     max_tokens=50000
 )
@@ -30,7 +30,7 @@ search_datadog_hosts(
 ```
 search_datadog_services(
     context="Level 2: Service tagging analysis",
-    query="*",
+    filter="service:<service>,env:<env>",
     detailed_output=True,
     max_tokens=30000
 )

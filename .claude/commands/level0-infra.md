@@ -8,7 +8,7 @@ Execute comprehensive infrastructure discovery and inventory for Level 0 (Founda
 ```
 search_datadog_hosts(
     context="Level 0: Discovering all monitored infrastructure",
-    filter="*",
+    filter="env:<env>",
     include_all_tags=True,
     max_tokens=50000
 )
@@ -33,9 +33,9 @@ Query by environment:
 get_datadog_metric(
     context="Calculating current agent deployment",
     queries=[
-        "count:datadog.agent.running{*}",
-        "count:datadog.agent.running{*} by {env}",
-        "count:datadog.agent.running{*} by {cloud_provider}"
+        "count:datadog.agent.running{env:<env>}",
+        "count:datadog.agent.running{env:<env>} by {env}",
+        "count:datadog.agent.running{env:<env>} by {cloud_provider}"
     ],
     from="now-1h"
 )
@@ -44,8 +44,8 @@ get_datadog_metric(
 **Step 5: Service Discovery**
 ```
 search_datadog_services(
-    context="Discovering all services",
-    query="*",
+    context="Discovering all services in environment",
+    filter="env:<env>",
     detailed_output=False
 )
 ```

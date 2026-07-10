@@ -18,7 +18,7 @@ This operational standard provides:
 ```
 search_datadog_hosts(
     context="Level 0: Auditing current tagging practices",
-    filter="*",
+    filter="env:<env>",
     include_all_tags=True,
     max_tokens=50000
 )
@@ -46,8 +46,8 @@ Look for common anti-patterns:
 **Step 4: Service-Level Tagging**
 ```
 search_datadog_services(
-    context="Analyzing service tagging",
-    query="*",
+    context="Analyzing service tagging by environment",
+    filter="env:<env>",
     detailed_output=True
 )
 ```

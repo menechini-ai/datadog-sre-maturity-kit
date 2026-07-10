@@ -5,7 +5,7 @@ Run a comprehensive SRE maturity assessment (30 minutes) with detailed analysis.
 **Execute full assessment across all 8 dimensions:**
 
 1. **Infrastructure Coverage**
-   - Query all hosts with `search_datadog_hosts(filter="*", include_all_tags=True)`
+   - Query all hosts with `search_datadog_hosts(filter="env:<env>", include_all_tags=True)`
    - Calculate agent deployment percentage
    - Identify cloud provider distribution
    - Check agent version consistency

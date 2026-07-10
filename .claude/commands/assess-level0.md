@@ -12,19 +12,19 @@ Assess readiness for Level 0 (Foundation - Discovery & Planning phase).
 **Execute these checks:**
 
 1. **Infrastructure Discovery**
-   - Query: `search_datadog_hosts(filter="*", include_all_tags=True)`
+   - Query: `search_datadog_hosts(filter="env:<env>", include_all_tags=True)`
    - Count total hosts vs cloud instances
    - Identify monitored vs unmonitored resources
    - List all environments and services
 
 2. **Current Coverage Analysis**
-   - Query: `get_datadog_metric(queries=["count:datadog.agent.running{*}"])`
+   - Query: `get_datadog_metric(queries=["count:datadog.agent.running{env:<env>}"])`
    - Calculate baseline agent coverage
    - Identify monitoring gaps
    - Document existing tools
 
 3. **Cost Baseline**
-   - Query: `get_datadog_metric(queries=["sum:all.cost{*}.rollup(sum, monthly)"], use_cloud_cost=True)`
+   - Query: `get_datadog_metric(queries=["sum:all.cost{env:<env>}.rollup(sum, monthly)"], use_cloud_cost=True)`
    - Establish cost baseline
    - Identify top cost drivers
    - Document current spend
