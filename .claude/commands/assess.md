@@ -1,6 +1,6 @@
 # Quick SRE Maturity Assessment
 
-> **Reference**: [MCP Tools](../datadog-info/README.md) | [Scorecard](../assessment-tools/maturity-scorecard.md)
+> **Reference**: [MCP Tools](../../datadog-info/README.md) | [Scorecard](../../assessment-tools/maturity-scorecard.md)
 
 Run a quick SRE maturity assessment (10 minutes) covering all 8 dimensions:
 

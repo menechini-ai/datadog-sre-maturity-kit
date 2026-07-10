@@ -5,7 +5,7 @@ Execute comprehensive tagging compliance check for Level 2 (Proactive).
 **Target:** ≥95% compliance with Unified Service Tagging (env, service, version)
 
 **For detailed tagging implementation guidance**, see:
-→ [operational-standards-tagging-strategy.md](../notebooks/operational-standards-tagging-strategy.md) ⭐ **REQUIRED FOR LEVEL 3**
+→ [operational-standards-tagging-strategy.md](../../notebooks/operational-standards-tagging-strategy.md) ⭐ **REQUIRED FOR LEVEL 3**
 
 This operational standard provides:
 - Complete UST implementation guide

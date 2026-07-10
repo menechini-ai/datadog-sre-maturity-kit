@@ -5,7 +5,7 @@ Generate comprehensive gap analysis between current level and target level.
 **Usage:** This command takes your current maturity level and identifies all gaps preventing you from reaching your target level.
 
 **For implementation guidance on each gap**, refer to:
-→ [Operational Standards Mapping](../planning/operational-standards-mapping.md) - Shows which operational standards to use for each capability
+→ [Operational Standards Mapping](../../planning/operational-standards-mapping.md) - Shows which operational standards to use for each capability
 
 **Parameters:**
 - Current Level: [Detected from assessment or user-specified]

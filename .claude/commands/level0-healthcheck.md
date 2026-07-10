@@ -3,11 +3,11 @@
 Generate comprehensive Level 0 health check report combining all discovery findings.
 
 **For detailed implementation guidance**, refer to these operational standards:
-- → [01-operational-standards-platform-preparation.md](../notebooks/01-operational-standards-platform-preparation.md) - Network, proxy, API keys
-- → [operational-standards-tagging-strategy.md](../notebooks/operational-standards-tagging-strategy.md) - UST framework
-- → [03-operational-standards-governance.md](../notebooks/03-operational-standards-governance.md) - Compliance requirements
+- → [01-operational-standards-platform-preparation.md](../../notebooks/01-operational-standards-platform-preparation.md) - Network, proxy, API keys
+- → [operational-standards-tagging-strategy.md](../../notebooks/operational-standards-tagging-strategy.md) - UST framework
+- → [03-operational-standards-governance.md](../../notebooks/03-operational-standards-governance.md) - Compliance requirements
 
-See also: [Operational Standards Mapping](../planning/operational-standards-mapping.md) for complete Level 0 guidance.
+See also: [Operational Standards Mapping](../../planning/operational-standards-mapping.md) for complete Level 0 guidance.
 
 **Task: Create Initial Health Check Report**
 

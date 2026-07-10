@@ -3,7 +3,7 @@
 Execute comprehensive tagging audit for Level 0 (Foundation).
 
 **For detailed tagging implementation guidance**, see:
-→ [operational-standards-tagging-strategy.md](../notebooks/operational-standards-tagging-strategy.md)
+→ [operational-standards-tagging-strategy.md](../../notebooks/operational-standards-tagging-strategy.md)
 
 This operational standard provides:
 - UST tag definitions (env, service, version)

@@ -5,7 +5,7 @@ Generate step-by-step upgrade plan from current level to next level.
 **Purpose:** Create actionable implementation plan with concrete steps, milestones, and validation criteria.
 
 **For implementation details on each step**, refer to:
-→ [Operational Standards Mapping](../planning/operational-standards-mapping.md) - Complete guide showing which operational standards to use at each level
+→ [Operational Standards Mapping](../../planning/operational-standards-mapping.md) - Complete guide showing which operational standards to use at each level
 
 **Key operational standards by level**:
 - Level 0→1: Platform Preparation, Access Management
