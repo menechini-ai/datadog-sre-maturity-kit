@@ -25,3 +25,4 @@ venv/
 # Node (caso tooling JS seja adicionado)
 node_modules/
 spec-kit-sre-datadog-patches
+.sisyphus/
