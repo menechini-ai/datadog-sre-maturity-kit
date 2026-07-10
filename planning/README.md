@@ -1,6 +1,6 @@
-# SRE Spec Kit - Planning Documentation
+# Datadog SRE Maturity Kit - Planning Documentation
 
-This directory contains detailed planning documents for the SRE Spec Kit with Datadog Observability implementation.
+This directory contains detailed planning documents for the Datadog SRE Maturity Kit with Datadog Observability implementation.
 
 ## Planning Documents
 

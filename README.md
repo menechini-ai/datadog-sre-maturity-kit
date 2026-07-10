@@ -1,457 +1,292 @@
-# SRE Spec Kit for Datadog
+<p align="center">
+  <img alt="Datadog SRE Maturity Kit" src="https://img.shields.io/badge/SRE%20Spec%20Kit-Datadog-632CA6?logo=datadog&logoColor=white&style=for-the-badge" width="400px">
+</p>
 
-**A comprehensive maturity assessment and implementation framework for Datadog observability**
+<h1 align="center">Datadog SRE Maturity Kit</h1>
 
-![Maturity Levels](https://img.shields.io/badge/Maturity%20Levels-6%20(0--5)-blue)
-![Commands](https://img.shields.io/badge/Slash%20Commands-18-green)
-![Notebook Templates](https://img.shields.io/badge/Notebook%20Templates-14-orange)
+<p align="center">
+  <strong>A comprehensive maturity assessment and implementation framework for Datadog Observability</strong>
+</p>
 
----
+<p align="center">
+  <img src="https://img.shields.io/badge/Maturity%20Levels-6%20(0--5)-blue" alt="Maturity Levels"/>
+  <img src="https://img.shields.io/badge/Slash%20Commands-18-green" alt="Commands"/>
+  <img src="https://img.shields.io/badge/Notebook%20Templates-14-orange" alt="Notebook Templates"/>
+  <img src="https://img.shields.io/badge/license-MIT-green" alt="License"/>
+</p>
 
-## 🚀 Quick Start
-
-**New here?** Start with the [Quick Start Guide](./QUICKSTART.md) to run your first assessment in 5 minutes.
-
-```bash
-# Your first command - assess your current maturity
-/assess
-```
-
-**Already familiar?** Jump to:
-- [Command Reference](./COMMANDS.md) - All 18 slash commands
-- [Level Definitions](./planning/level-definitions.md) - Detailed maturity criteria
-- [Implementation Plan](./PLAN.md) - Project roadmap and status
-
----
-
-## What is This?
-
-The **SRE Spec Kit for Datadog** is a command-driven framework that helps SRE and platform engineering teams:
-
-1. **Assess** current Datadog observability maturity (Levels 0-5)
-2. **Identify** gaps in monitoring, tagging, cost optimization, and incident management
-3. **Plan** step-by-step upgrades to advance SRE practices
-4. **Document** investigations, postmortems, and reports using proven templates
-5. **Track** progress over time with repeatable assessments
-
-### Why Use This Kit?
-
-- ✅ **Objective Assessment**: Uses real Datadog data via MCP (not surveys)
-- ✅ **Industry Standards**: Based on SRE best practices and Datadog recommendations
-- ✅ **Actionable Plans**: Get specific, prioritized steps to improve
-- ✅ **Save Time**: Pre-built commands and templates (not starting from scratch)
-- ✅ **Track Progress**: Repeatable assessments show maturity growth
+<p align="center">
+  <a href="#overview">Overview</a> •
+  <a href="docs/commands.md">Commands</a> •
+  <a href="docs/notebooks.md">Notebooks</a> •
+  <a href="docs/operational-standards.md">Standards</a> •
+  <a href="docs/mcp-config.md">MCP Config</a> •
+  <a href="#quick-start">Quick Start</a> •
+  <a href="#project-structure">Structure</a>
+</p>
 
 ---
 
-## Maturity Levels Overview
+## Overview
+
+The **Datadog SRE Maturity Kit** is a command-driven framework that helps SRE and platform engineering teams assess, plan, and implement observability best practices using Datadog. It provides a structured maturity model (Levels 0–5), pre-built slash commands for Claude Code, and ready-to-use notebook templates for assessments, investigations, runbooks, and reports.
+
+This kit was built to bridge the gap between Datadog's raw capabilities and the operational standards required for production-grade observability at scale.
+
+### What's inside
+
+| Feature | Description |
+|---------|-------------|
+| **Maturity Assessment** | 6-level framework (Level 0–5) covering foundation to industry excellence |
+| **Slash Commands** | 18 Claude Code commands for assessments, reports, gap analysis, and upgrades |
+| **Notebook Templates** | 14 pre-built Datadog Notebook templates for common SRE workflows |
+| **Tagging Strategy** | Comprehensive framework based on Datadog's Unified Service Tagging |
+| **Operational Standards** | Platform preparation, access management, governance, data monitoring, visualization |
+| **MCP Integration** | Datadog MCP Server configuration for AI-driven observability queries |
+| **Gap Analysis** | Structured process to identify and plan maturity level upgrades |
+| **Executive Reports** | Leadership-ready reporting templates with cost and health metrics |
+
+## Features
+
+### 📊 Maturity Assessment Framework
+
+- **6 Levels**: Foundation (0) → Excellence (5) with clear graduation criteria
+- **Objective Scoring**: Uses real Datadog data via MCP queries (not surveys)
+- **Repeatable**: Track progress over time with reassessments
+- **Comprehensive Checks**: Infrastructure, tagging, monitors, logs, APM, cost, incidents, dashboards
+
+### 🎮 Slash Commands for Claude Code
+
+- **Assessment Commands**: `/assess`, `/assess-full`, `/assess-level0`, `/assess-level1`
+- **Task Commands**: `/level0-infra`, `/level0-tagging`, `/level0-cost`, `/level0-healthcheck`, `/level2-tagging`, `/level3-cost`
+- **Utility Commands**: `/gap-analysis`, `/upgrade-plan`, `/generate-report`, `/create-starter-notebooks`, `/save-to-notebook`, `/append-to-notebook`, `/help`
+- **Smart Defaults**: Each command runs the right MCP queries, analyzes results, and formats output
+
+### 📓 Notebook Templates
+
+- **Assessments**: Level readiness, quarterly review, weekly assessment
+- **Investigations**: Error spike, performance, cost investigation templates
+- **Runbooks**: Alert response, service onboarding, cost optimization
+- **Postmortems**: Incident postmortem, outage analysis
+- **Reports**: Executive report, team health, monthly metrics
+
+### 🏷️ Tagging Strategy
+
+- **Reserved Tags**: `env`, `service`, `version`, `source`, `host`, `device` — per Unified Service Tagging
+- **Critical Tags**: `team`, `runtime`, `journey`, `role`, `application`
+- **Format Standards**: Lowercase with underscores — no hyphens, no unbounded sources
+- **Compliance Checks**: Automated validation against tagging best practices
+
+### 🔐 Governance & Compliance
+
+- **PCI-DSS**: US1 site only, HTTPS endpoints, Audit Trail required
+- **HIPAA**: BAA required, no Zendesk chat, no log sharing
+- **FedRAMP**: GovCloud instance only (Moderate level)
+- **GDPR**: EU1 site for data residency
+
+## Maturity Levels
 
 | Level | Name | Focus | Timeline |
 |-------|------|-------|----------|
-| **Level 0** | Foundation | Basic observability setup | 1-2 months |
-| **Level 1** | Standardization | Operational excellence | 2-3 months |
-| **Level 2** | Optimization | Efficiency & scale | 3-4 months |
-| **Level 3** | Intelligence | Proactive operations | 4-6 months |
-| **Level 4** | Innovation | Advanced capabilities | 6-9 months |
-| **Level 5** | Excellence | Industry leadership | 9-12 months |
+| **Level 0** | Foundation | Basic observability setup | 1–2 months |
+| **Level 1** | Standardization | Operational excellence | 2–3 months |
+| **Level 2** | Optimization | Efficiency & scale | 3–4 months |
+| **Level 3** | Intelligence | Proactive operations | 4–6 months |
+| **Level 4** | Innovation | Advanced capabilities | 6–9 months |
+| **Level 5** | Excellence | Industry leadership | 9–12 months |
 
-**Total journey from Level 0 to Level 5**: Approximately 2-3 years
+**Total journey**: Approximately 2–3 years. See [Level Definitions](./planning/level-definitions.md) for detailed requirements.
 
-See [Level Definitions](./planning/level-definitions.md) for detailed requirements.
-
----
-
-## 📋 Command Categories
-
-### Assessment Commands (6 commands)
-Run maturity assessments and generate reports:
-- `/assess` - Quick 10-minute maturity check
-- `/assess-full` - Comprehensive 30-minute assessment
-- `/assess-level0`, `/assess-level1` - Level-specific validation
-- `/gap-analysis` - Identify gaps between current and target levels
-- `/upgrade-plan` - Generate step-by-step upgrade roadmap
-
-### Level 0 Foundation Commands (4 commands)
-Establish baseline visibility:
-- `/level0-infra` - Infrastructure discovery and inventory
-- `/level0-tagging` - Tagging compliance audit
-- `/level0-cost` - Cost baseline establishment
-- `/level0-healthcheck` - Complete health check report
-
-### Advanced Commands (2 commands)
-Level 2+ capabilities:
-- `/level2-tagging` - Advanced tagging strategy
-- `/level3-cost` - Detailed cost optimization analysis
-
-### Reporting & Documentation (4 commands)
-Generate and share results:
-- `/generate-report` - Executive summary generation
-- `/save-to-notebook` - Save markdown to Datadog Notebook
-- `/assess-to-notebook` - Assessment with Datadog export
-- `/create-starter-notebooks` - Generate 14 template files
-
-### Utilities (2 commands)
-Helper commands:
-- `/help` - List all available commands
-- `/append-to-notebook` - Append to existing Datadog Notebook
-
-**Total**: 18 slash commands
-
-See [COMMANDS.md](./COMMANDS.md) for detailed command reference.
-
----
-
-## 📊 8 Assessment Dimensions
-
-Every assessment evaluates your Datadog implementation across:
-
-1. **Infrastructure Coverage** (25 points)
-   - Agent deployment coverage
-   - Cloud integration status
-   - Service discovery
-
-2. **Service Catalog** (10 points)
-   - Service registration completeness
-   - Ownership assignment
-   - Metadata quality
-
-3. **Tagging Compliance** (15 points)
-   - UST tag coverage (env, service, version)
-   - Tag consistency and format
-   - Custom tag strategy
-
-4. **Monitoring Quality** (15 points)
-   - Monitor coverage by service tier
-   - Alert quality and actionability
-   - SLO tracking
-
-5. **Log Management** (10 points)
-   - Log collection coverage
-   - Pipeline efficiency
-   - Retention and archiving strategy
-
-6. **Cost Optimization** (10 points)
-   - Cost visibility by service/team
-   - Resource efficiency
-   - Optimization opportunities
-
-7. **Incident Management** (10 points)
-   - MTTR and MTTD metrics
-   - Postmortem quality
-   - Automation level
-
-8. **Advanced Capabilities** (5 points)
-   - APM, Synthetics, RUM usage
-   - Automation and workflows
-   - ML-powered features
-
-**Maximum Score**: 100 points
-
-See [Assessment Methodology](./planning/assessment-methodology.md) for scoring details.
-
----
-
-## 📁 Repository Structure
-
-```
-spec-kit-sre-datadog/
-│
-├── README.md                   ← You are here
-├── QUICKSTART.md              ← Start here for new users
-├── COMMANDS.md                 ← Complete command reference
-├── PLAN.md                     ← Implementation plan and status
-├── CLAUDE.md                   ← Claude Code integration guide
-│
-├── .claude/
-│   └── commands/              ← 18 slash commands
-│       ├── assess.md
-│       ├── assess-full.md
-│       ├── level0-infra.md
-│       └── ... (16 more)
-│
-├── planning/                   ← Framework documentation
-│   ├── README.md
-│   ├── level-definitions.md   ← Detailed maturity criteria
-│   ├── assessment-methodology.md
-│   ├── mcp-query-patterns.md
-│   ├── claude-md-strategy.md
-│   └── notebook-templates-spec.md
-│
-├── notebooks/                  ← 14 ready-to-use templates
-│   ├── README.md
-│   ├── assessments/           ← 3 assessment templates
-│   ├── investigations/        ← 3 investigation templates
-│   ├── postmortems/           ← 2 postmortem templates
-│   ├── runbooks/              ← 3 runbook templates
-│   └── reports/               ← 3 report templates
-│
-└── datadog-info/              ← Datadog account reference
-    └── (operational standards docs)
-```
-
----
-
-## 🎯 Common Use Cases
-
-### Use Case 1: New to Datadog SRE
-**Goal**: Understand your starting point
+## Quick Start
 
 ```bash
-# Day 1: Quick assessment
+# 1. Open this project in Claude Code
+
+# 2. Run your first assessment
 /assess
 
-# Day 2: Baseline your infrastructure
-/level0-infra
-/level0-tagging
-/level0-cost
+# 3. Check a specific level
+/assess-level0
 
-# Day 3: Create improvement plan
-/gap-analysis
-/upgrade-plan
-```
-
-### Use Case 2: Quarterly Review
-**Goal**: Track progress and report to leadership
-
-```bash
-# Run comprehensive assessment
-/assess-full
-
-# Generate executive report
+# 4. Generate a report
 /generate-report
-
-# Save to Datadog for sharing
-/save-to-notebook
 ```
 
-### Use Case 3: Preparing for Next Level
-**Goal**: Validate readiness to advance
+See the [Quick Start Guide](./QUICKSTART.md) for a 5-minute walkthrough.
 
-```bash
-# Check current level validation
-/assess-level1
+## Commands
 
-# Identify remaining gaps
-/gap-analysis
+### Assessment Commands
 
-# Create upgrade roadmap
-/upgrade-plan
+| Command | Description |
+|---------|-------------|
+| `/assess` | Quick 10-minute maturity check across all levels |
+| `/assess-full` | Comprehensive 30-minute deep-dive assessment |
+| `/assess-level0` | Level 0 (Foundation) validation |
+| `/assess-level1` | Level 1 (Standardization) validation |
+
+### Task Commands
+
+| Command | Description |
+|---------|-------------|
+| `/level0-infra` | Infrastructure discovery and inventory |
+| `/level0-tagging` | Tagging compliance audit |
+| `/level0-cost` | Cost baseline analysis |
+| `/level0-healthcheck` | Account health check report |
+| `/level2-tagging` | Advanced tagging strategy (Level 2) |
+| `/level3-cost` | Cost optimization (Level 3) |
+
+### Utility Commands
+
+| Command | Description |
+|---------|-------------|
+| `/gap-analysis` | Identify gaps between current and target level |
+| `/upgrade-plan` | Generate step-by-step upgrade roadmap |
+| `/generate-report` | Create executive summary report |
+| `/assess-to-notebook` | Save assessment results to Datadog Notebook |
+| `/save-to-notebook` | Save any output to a Datadog Notebook |
+| `/append-to-notebook` | Append content to existing Datadog Notebook |
+| `/create-starter-notebooks` | Bootstrap initial notebook library |
+| `/help` | Show available commands and usage |
+
+## Notebook Templates
+
+```
+notebooks/
+├── assessments/
+│   ├── level-readiness-template.md      # Level graduation validation
+│   ├── quarterly-review-template.md      # Quarterly business review
+│   └── weekly-assessment-template.md     # Weekly health check
+├── investigations/
+│   ├── error-spike-investigation.md      # Error spike root cause
+│   ├── performance-investigation.md      # Performance regression
+│   └── cost-investigation.md             # Cost anomaly analysis
+├── runbooks/
+│   ├── alert-response-runbook.md         # Standard alert response
+│   ├── service-onboarding-runbook.md     # New service setup
+│   └── cost-optimization-runbook.md      # Cost reduction playbook
+├── postmortems/
+│   ├── incident-postmortem-template.md   # Post-incident review
+│   └── outage-analysis-template.md       # Outage impact analysis
+└── reports/
+    ├── executive-report-template.md      # Leadership summary
+    ├── team-health-report.md             # Team health dashboard
+    └── monthly-metrics-report.md         # Monthly KPI report
 ```
 
-### Use Case 4: Incident Investigation
-**Goal**: Document root cause and learnings
+## Project Structure
 
-```bash
-# Create investigation from template
-/create-starter-notebooks
-
-# Use notebooks/investigations/error-spike-investigation-template.md
-# Customize for your incident
-# Run embedded MCP queries
-# Document findings
-
-# Save to Datadog
-/save-to-notebook
+```
+datadog-sre-maturity-kit/
+├── .claude/commands/            # Slash command definitions (18 commands)
+│   ├── assess.md                # Quick assessment
+│   ├── assess-full.md           # Comprehensive assessment
+│   ├── assess-level0.md         # Level 0 validation
+│   ├── assess-level1.md         # Level 1 validation
+│   ├── level0-infra.md          # Infrastructure discovery
+│   ├── level0-tagging.md        # Tagging audit
+│   ├── level0-cost.md           # Cost baseline
+│   ├── level0-healthcheck.md    # Health check
+│   ├── level2-tagging.md        # Advanced tagging
+│   ├── level3-cost.md           # Cost optimization
+│   ├── gap-analysis.md          # Gap identification
+│   ├── upgrade-plan.md          # Upgrade roadmap
+│   ├── generate-report.md       # Executive report
+│   ├── create-starter-notebooks.md
+│   ├── save-to-notebook.md
+│   ├── append-to-notebook.md
+│   ├── assess-to-notebook.md
+│   └── help.md
+├── notebooks/                   # Datadog Notebook templates (14)
+│   ├── 00-healthcheck-account-analysis.md
+│   ├── 01-operational-standards-platform-preparation.md
+│   ├── 02-operational-standards-access-management.md
+│   ├── 03-operational-standards-governance.md
+│   ├── 04-operational-standards-data-monitoring.md
+│   ├── 05-operational-standards-data-visualization.md
+│   ├── operational-standards-tagging-strategy.md
+│   ├── assessments/
+│   ├── investigations/
+│   ├── runbooks/
+│   ├── postmortems/
+│   └── reports/
+├── planning/                    # Planning & methodology docs
+│   ├── level-definitions.md     # Maturity level criteria
+│   ├── assessment-methodology.md
+│   ├── operational-standards-mapping.md
+│   ├── notebook-templates-spec.md
+│   └── notebook-naming-conventions.md
+├── docs/                        # Documentation hub
+│   ├── overview.md              # Architecture and maturity model
+│   ├── commands.md              # Slash command reference (Anthropic format)
+│   ├── notebooks.md             # Template reference
+│   ├── operational-standards.md # Standards reference
+│   └── mcp-config.md            # MCP configuration guide
+├── datadog-info/                # Datadog reference
+├── mcp.json                     # Datadog MCP Server (US3)
+├── mcp.env.example              # MCP environment variables
+├── COMMANDS.md                  # Full command reference
+├── QUICKSTART.md                # Quick start guide
+├── PLAN.md                      # Project roadmap
+└── CLAUDE.md                    # Claude Code guidance
 ```
 
----
+## Configuration
 
-## 📚 Documentation
+### Environment Variables (`.env`)
 
-### Getting Started
-- **[QUICKSTART.md](./QUICKSTART.md)** - Start here! 5-minute quick start guide
-- **[COMMANDS.md](./COMMANDS.md)** - Complete command reference with examples
-
-### Planning & Methodology
-- **[PLAN.md](./PLAN.md)** - Implementation plan and current status
-- **[planning/level-definitions.md](./planning/level-definitions.md)** - Detailed maturity criteria
-- **[planning/assessment-methodology.md](./planning/assessment-methodology.md)** - How assessments work
-- **[planning/mcp-query-patterns.md](./planning/mcp-query-patterns.md)** - Common Datadog MCP queries
-
-### Templates & Guides
-- **[notebooks/README.md](./notebooks/README.md)** - Template library guide
-- **[planning/notebook-templates-spec.md](./planning/notebook-templates-spec.md)** - Template specifications
-
-### Integration
-- **[CLAUDE.md](./CLAUDE.md)** - Claude Code integration strategy
-- **[planning/claude-md-strategy.md](./planning/claude-md-strategy.md)** - MCP usage patterns
-
----
-
-## 🔧 Prerequisites
-
-### Required
-1. **Datadog Account** with API access
-2. **Datadog MCP Server** installed and configured
-   - See: https://docs.datadoghq.com/bits_ai/mcp_server/setup/
-3. **Claude Code CLI** installed and running
-4. **API/App Keys** with read permissions for:
-   - Hosts, services, metrics
-   - Logs, traces, events
-   - Monitors, dashboards, notebooks
-
-### Recommended Permissions
-For full assessment capabilities, your API key should have:
-- ✅ Read access to all Datadog resources
-- ✅ Write access to notebooks (for `/save-to-notebook` commands)
-- ✅ Cloud cost data access (for cost optimization)
-
----
-
-## 🎓 Learning Path
-
-### Week 1: Foundation
-1. Read [QUICKSTART.md](./QUICKSTART.md)
-2. Run `/assess` to understand your current level
-3. Review [Level Definitions](./planning/level-definitions.md)
-4. Run `/gap-analysis` to see what's missing
-
-### Week 2-4: Level 0 Completion
-1. Run `/level0-infra`, `/level0-tagging`, `/level0-cost`
-2. Fix critical gaps (especially tagging)
-3. Run `/assess-level0` to validate
-4. Run `/level0-healthcheck` for complete report
-
-### Month 2-3: Level 1 Advancement
-1. Run `/upgrade-plan` for Level 1
-2. Implement monitoring and SLOs
-3. Set up log management
-4. Run `/assess-level1` to validate
-
-### Ongoing: Continuous Improvement
-1. Run `/assess` weekly to track progress
-2. Run `/assess-full` monthly for detailed review
-3. Run `/generate-report` quarterly for leadership
-4. Use notebook templates for investigations and postmortems
-
----
-
-## 💡 Best Practices
-
-### Assessment Best Practices
-1. **Start with Level 0** - Don't skip the foundation
-2. **Run regularly** - Weekly quick checks, monthly deep dives
-3. **Track progress** - Save assessment results over time
-4. **Share results** - Use `/generate-report` for leadership updates
-
-### Implementation Best Practices
-1. **Follow the levels** - Each builds on the previous
-2. **Fix tagging first** - It's the foundation for everything else
-3. **Use templates** - Don't reinvent the wheel
-4. **Document everything** - Use notebook templates for incidents
-
-### Tool Usage
-1. **Use slash commands** - Pre-built and tested
-2. **Save to Datadog** - Use `/save-to-notebook` for collaboration
-3. **Refer to planning docs** - When you need details
-4. **Check COMMANDS.md** - For syntax and examples
-
----
-
-## 🆘 Troubleshooting
-
-### "Datadog MCP not found"
-- Install Datadog MCP server: https://docs.datadoghq.com/bits_ai/mcp_server/setup/
-- Verify configuration in Claude Code settings
-
-### "Permission denied" errors
-- Check API key permissions
-- Ensure read access to all Datadog resources
-- Verify API key is not expired
-
-### Assessment shows unexpected low scores
-- Check tagging compliance - it's often the culprit
-- Verify data is flowing (agents reporting, logs ingesting)
-- Run `/assess-full` for detailed breakdown
-
-### Commands not found
-- Commands are in `.claude/commands/` directory
-- Use `/help` to list all available commands
-- Check that you're using slash syntax: `/assess` not `assess`
-
----
-
-## 🤝 Contributing
-
-This is an internal tool framework. To improve:
-
-1. **Add new templates** - Create in `notebooks/` and document in README
-2. **Enhance commands** - Update `.claude/commands/` files
-3. **Improve docs** - Update planning documents
-4. **Share learnings** - Document patterns in `planning/`
-
----
-
-## 📈 Success Metrics
-
-Track your SRE maturity journey:
-
-- ✅ Initial assessment completed
-- ✅ Current level identified and validated
-- ✅ Gaps documented with priorities
-- ✅ Upgrade plan created and approved
-- ✅ Quarterly assessments scheduled
-- ✅ Team aligned on SRE goals
-- ✅ Executive reporting established
-- ✅ Level advancement achieved
-
----
-
-## 📞 Getting Help
-
-### Within This Repository
-- **General usage**: [QUICKSTART.md](./QUICKSTART.md)
-- **Command syntax**: [COMMANDS.md](./COMMANDS.md)
-- **Assessment details**: [planning/assessment-methodology.md](./planning/assessment-methodology.md)
-- **Level requirements**: [planning/level-definitions.md](./planning/level-definitions.md)
-
-### External Resources
-- **Datadog MCP**: https://docs.datadoghq.com/bits_ai/mcp_server/
-- **Datadog Best Practices**: https://docs.datadoghq.com/
-- **SRE Fundamentals**: https://sre.google/
-
----
-
-## 📊 Project Status
-
-**Current Implementation Status**: ~80% Complete
-
-### ✅ Completed (Phases 1-7)
-- Planning and methodology documentation
-- Level definitions (Levels 0-5)
-- 18 slash commands
-- 14 notebook templates
-- Assessment framework
-- Quick start guide
-- Command reference
-
-### 🚧 In Progress (Phase 8)
-- Maturity levels directory structure (P1)
-
-### 📋 Planned (Phases 9-11)
-- Additional assessment commands (P2)
-- Assessment automation tools (P2)
-- Advanced level commands (P3)
-
-See [PLAN.md](./PLAN.md) for detailed status and roadmap.
-
----
-
-## 📄 License
-
-MIT License - See LICENSE file for details
-
----
-
-## 🚀 Ready to Start?
-
-**Your first command awaits:**
-
-```bash
-/assess
+```env
+DD_SITE=us3.datadoghq.com
+DD_API_KEY=your-api-key
+DD_APP_KEY=your-app-key
 ```
 
-Or read the [Quick Start Guide](./QUICKSTART.md) for a guided introduction.
+### MCP Configuration (`mcp.json`)
+
+```json
+{
+  "mcpServers": {
+    "datadog": {
+      "type": "http",
+      "url": "https://mcp.us3.datadoghq.com/api/unstable/mcp-server/mcp"
+    }
+  }
+}
+```
+
+For other Datadog sites, replace `us3` with your [site subdomain](https://docs.datadoghq.com/getting_started/site/) (e.g., `us1`, `eu`, `us5`).
+
+## Operational Standards
+
+| Standard | Description |
+|----------|-------------|
+| [Platform Preparation](./notebooks/01-operational-standards-platform-preparation.md) | Network egress, proxy config, API/App key strategies |
+| [Access Management](./notebooks/02-operational-standards-access-management.md) | RBAC roles, Datadog Teams, permission management |
+| [Governance](./notebooks/03-operational-standards-governance.md) | Compliance (GDPR, HIPAA, FedRAMP, PCI-DSS), agent deployment |
+| [Data Monitoring](./notebooks/04-operational-standards-data-monitoring.md) | Log management, indexing, archiving |
+| [Data Visualization](./notebooks/05-operational-standards-data-visualization.md) | Dashboard design patterns, template variables |
+| [Tagging Strategy](./notebooks/operational-standards-tagging-strategy.md) | Unified Service Tagging, reserved & recommended tags |
+
+## Contributing
+
+1. Pick a maturity level or operational standard to work on
+2. Update the corresponding notebook or planning document
+3. Run `/assess` to validate your changes
+4. Submit a pull request
+
+---
+
+## Documentation
+
+All detailed documentation is in the [`docs/`](./docs/) directory:
+
+| Document | Description |
+|----------|-------------|
+| [Overview](./docs/overview.md) | Architecture, components, maturity model |
+| [Commands Reference](./docs/commands.md) | All 18 slash commands with Anthropic-format frontmatter |
+| [Notebook Templates](./docs/notebooks.md) | 14 template reference with frontmatter schemas |
+| [Operational Standards](./docs/operational-standards.md) | 7 standards documents and key principles |
+| [MCP Configuration](./docs/mcp-config.md) | Server setup, env vars, regional endpoints |
 
 ---
 

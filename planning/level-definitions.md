@@ -1,6 +1,6 @@
 # SRE Maturity Level Definitions
 
-This document defines detailed criteria, capabilities, and success metrics for each maturity level in the SRE Spec Kit.
+This document defines detailed criteria, capabilities, and success metrics for each maturity level in the Datadog SRE Maturity Kit.
 
 ## Maturity Level Framework Overview
 

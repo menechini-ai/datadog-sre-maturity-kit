@@ -1,6 +1,6 @@
-# Available SRE Spec Kit Commands
+# Available Datadog SRE Maturity Kit Commands
 
-List all available slash commands for the SRE Spec Kit.
+List all available slash commands for the Datadog SRE Maturity Kit.
 
 ## 📊 Assessment Commands
 

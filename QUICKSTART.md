@@ -1,4 +1,4 @@
-# SRE Spec Kit - Quick Start Guide
+# Datadog SRE Maturity Kit - Quick Start Guide
 
 **Simple, command-based approach to SRE maturity assessment and implementation**
 

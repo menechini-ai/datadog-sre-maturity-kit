@@ -1,6 +1,6 @@
-# SRE Spec Kit Slash Commands
+# Datadog SRE Maturity Kit Slash Commands
 
-This directory contains custom slash commands for the SRE Spec Kit.
+This directory contains custom slash commands for the Datadog SRE Maturity Kit.
 
 ## Available Commands
 

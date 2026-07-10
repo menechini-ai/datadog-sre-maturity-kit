@@ -1,6 +1,6 @@
 # Notebook Templates Specification
 
-Complete specification for starter notebook templates in the SRE Spec Kit.
+Complete specification for starter notebook templates in the Datadog SRE Maturity Kit.
 
 ## Template Structure Standard
 

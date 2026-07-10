@@ -1,6 +1,6 @@
-# CLAUDE.md Strategy for SRE Spec Kit
+# Datadog SRE Maturity Kit with Datadog Observability
 
-This document defines how CLAUDE.md files will be used throughout the SRE Spec Kit to guide Claude Code in using Datadog MCP effectively for assessments and implementations.
+This document defines how CLAUDE.md files will be used throughout the Datadog SRE Maturity Kit to guide Claude Code in using Datadog MCP effectively for assessments and implementations.
 
 ## Purpose of CLAUDE.md Files
 
@@ -30,11 +30,11 @@ Each directory in the spec kit contains a CLAUDE.md file that provides:
 
 ## Root CLAUDE.md (/CLAUDE.md)
 
-**Purpose**: Provides overall guidance for working with the SRE Spec Kit
+**Purpose**: Provides overall guidance for working with the Datadog SRE Maturity Kit
 
 **Key Sections**:
 ```markdown
-# SRE Spec Kit with Datadog Observability
+# Datadog SRE Maturity Kit
 
 ## Repository Purpose
 [Overview of the spec kit and its maturity-based approach]
