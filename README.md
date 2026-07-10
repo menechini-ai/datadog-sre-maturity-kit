@@ -236,7 +236,7 @@ datadog-sre-maturity-kit/
 ### Environment Variables (`.env`)
 
 ```env
-DD_SITE=us3.datadoghq.com
+DD_SITE=datadoghq.com
 DD_API_KEY=your-api-key
 DD_APP_KEY=your-app-key
 ```
@@ -248,7 +248,7 @@ DD_APP_KEY=your-app-key
   "mcpServers": {
     "datadog": {
       "type": "http",
-      "url": "https://mcp.us3.datadoghq.com/api/unstable/mcp-server/mcp"
+      "url": "https://mcp.datadoghq.com/api/unstable/mcp-server/mcp"
     }
   }
 }

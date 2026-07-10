@@ -24,7 +24,7 @@ Never use `filter="*"` or `query="*"` without tag scoping.
 ### MCP Server Endpoint
 
 ```
-https://mcp.us3.datadoghq.com/api/unstable/mcp-server/mcp
+https://mcp.datadoghq.com/api/unstable/mcp-server/mcp
 ```
 
 ### Toolset Selection

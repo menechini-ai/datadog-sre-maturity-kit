@@ -82,7 +82,7 @@ Agents with business tags | |
 - [Why should I install the Datadog Agent on my cloud instances? ](https://docs.datadoghq.com/agent/guide/why-should-i-install-the-agent-on-my-cloud-instances/#pagetitle)
 - Any EC2s or VMs with the Agent installed count as a single instance (no double-billing).
 
-[![https://us3.datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/tw5-ce9-ed6](https://p.us3.datadoghq.com/s/image/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/tw5-ce9-ed6.png)](https://us3.datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/tw5-ce9-ed6)
+[![https://datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/tw5-ce9-ed6](https://p.datadoghq.com/s/image/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/tw5-ce9-ed6.png)](https://datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/tw5-ce9-ed6)
 
 ### Agents with `env` or `team` tags 
 
@@ -98,9 +98,9 @@ You can check if any of the business tags are already being used in the followin
 - [Host Map group by tag](/infrastructure/map?groupby=team)
 - [Usage attribution page](/billing/usage-attribution) (only available to admins)
 
-[![https://us3.datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/kis-uaq-mvg](https://p.us3.datadoghq.com/s/image/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/kis-uaq-mvg.png)](https://us3.datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/kis-uaq-mvg)
+[![https://datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/kis-uaq-mvg](https://p.datadoghq.com/s/image/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/kis-uaq-mvg.png)](https://datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/kis-uaq-mvg)
 
-[![https://us3.datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/zaz-if2-qkb](https://p.us3.datadoghq.com/s/image/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/zaz-if2-qkb.png)](https://us3.datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/zaz-if2-qkb)
+[![https://datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/zaz-if2-qkb](https://p.datadoghq.com/s/image/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/zaz-if2-qkb.png)](https://datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/zaz-if2-qkb)
 
 # Monitors
 
@@ -123,9 +123,9 @@ Monitoring and alerting is an art that requires defining clear monitoring goals,
 - Monitors triggering more than 15 times per week would indicate alert fatigue.
 - Review current thresholds and consider using the monitor in Composite with anomaly detection
 
-[![https://us3.datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/8n4-a7e-sbi](https://p.us3.datadoghq.com/s/image/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/8n4-a7e-sbi.png)](https://us3.datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/8n4-a7e-sbi)
+[![https://datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/8n4-a7e-sbi](https://p.datadoghq.com/s/image/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/8n4-a7e-sbi.png)](https://datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/8n4-a7e-sbi)
 
-[![https://us3.datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/zjt-p59-sz8](https://p.us3.datadoghq.com/s/image/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/zjt-p59-sz8.png)](https://us3.datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/zjt-p59-sz8)
+[![https://datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/zjt-p59-sz8](https://p.datadoghq.com/s/image/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/zjt-p59-sz8.png)](https://datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/zjt-p59-sz8)
 
 # Log Management
 
@@ -137,7 +137,7 @@ Monitoring and alerting is an art that requires defining clear monitoring goals,
 
 ## Overall Exclusion Ratio
 
-[![https://us3.datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/25n-b3j-c9h](https://p.us3.datadoghq.com/s/image/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/25n-b3j-c9h.png)](https://us3.datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/25n-b3j-c9h)
+[![https://datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/25n-b3j-c9h](https://p.datadoghq.com/s/image/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/25n-b3j-c9h.png)](https://datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/25n-b3j-c9h)
 
 ## Indexed logs going through a pipeline 
 
@@ -148,7 +148,7 @@ Monitoring and alerting is an art that requires defining clear monitoring goals,
 - [Log Pipelines](https://docs.datadoghq.com/logs/log_configuration/pipelines/?tab=source) 
 - [Unparsed Logs ingested](/logs?query=datadog.pipelines%3Afalse&cols=host%2Cservice%2Csource)
 
-[![https://us3.datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/b2j-d7g-inr](https://p.us3.datadoghq.com/s/image/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/b2j-d7g-inr.png)](https://us3.datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/b2j-d7g-inr)
+[![https://datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/b2j-d7g-inr](https://p.datadoghq.com/s/image/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/b2j-d7g-inr.png)](https://datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/b2j-d7g-inr)
 
 ## Log status per index
 
@@ -160,7 +160,7 @@ Monitoring and alerting is an art that requires defining clear monitoring goals,
 -  [Log Indexes](https://docs.datadoghq.com/logs/log_configuration/indexes/#switch-off-switch-on) 
 -  [Indexed debug logs query](/logs?query=status%3Adebug&cols=host%2Cservice&index=&messageDisplay=inline&stream_sort=desc&viz=timeseries)
 
-[![https://us3.datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/3m3-us3-jsy](https://p.us3.datadoghq.com/s/image/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/3m3-us3-jsy.png)](https://us3.datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/3m3-us3-jsy)
+[![https://datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/3m3-us3-jsy](https://p.datadoghq.com/s/image/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/3m3-us3-jsy.png)](https://datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/3m3-us3-jsy)
 
 ## Multi-line index logs
 
@@ -177,7 +177,7 @@ There is no foolproof way to determine in app which of the logs you are sending 
 
 You can use the below widget as a starting point for identifying logs that might benefit from multi-line aggregation. Another mechanism would be to browse your log patterns to see if any patterns identified might be a component of a multi-line log. 
 
-[![https://us3.datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/3z7-x59-p2h](https://p.us3.datadoghq.com/s/image/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/3z7-x59-p2h.png)](https://us3.datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/3z7-x59-p2h)
+[![https://datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/3z7-x59-p2h](https://p.datadoghq.com/s/image/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/3z7-x59-p2h.png)](https://datadoghq.com/s/e5f1e8ef-6129-11f0-9806-2e69c1c6be5f/3z7-x59-p2h)
 
 # Dashboards 
 

@@ -13,7 +13,7 @@ The kit is pre-configured for the **US3** Datadog site. The MCP server uses HTTP
   "mcpServers": {
     "datadog": {
       "type": "http",
-      "url": "https://mcp.us3.datadoghq.com/api/unstable/mcp-server/mcp"
+      "url": "https://mcp.datadoghq.com/api/unstable/mcp-server/mcp"
     }
   }
 }
@@ -23,13 +23,13 @@ The kit is pre-configured for the **US3** Datadog site. The MCP server uses HTTP
 
 | Variable | Description | Required |
 |----------|-------------|----------|
-| `DD_SITE` | Datadog site (e.g., `us3.datadoghq.com`) | Yes |
+| `DD_SITE` | Datadog site (e.g., `datadoghq.com`) | Yes |
 | `DD_API_KEY` | Datadog API key | Yes |
 | `DD_APP_KEY` | Datadog Application key | Yes |
 
 Generate keys at:
-- API Keys: `https://us3.datadoghq.com/organization-settings/api-keys`
-- Application Keys: `https://us3.datadoghq.com/organization-settings/application-keys`
+- API Keys: `https://datadoghq.com/organization-settings/api-keys`
+- Application Keys: `https://datadoghq.com/organization-settings/application-keys`
 
 ## Regional Endpoints
 

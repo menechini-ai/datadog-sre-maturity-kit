@@ -177,7 +177,7 @@ The Datadog MCP server is pre-configured in `mcp.json`:
   "mcpServers": {
     "datadog": {
       "type": "http",
-      "url": "https://mcp.us3.datadoghq.com/api/unstable/mcp-server/mcp"
+      "url": "https://mcp.datadoghq.com/api/unstable/mcp-server/mcp"
     }
   }
 }

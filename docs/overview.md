@@ -35,7 +35,7 @@ Each level builds progressively on the previous. Teams must demonstrate capabili
 │         │                 │                  │           │
 │  ┌──────┴─────────────────┴──────────────────┴───────┐  │
 │  │              Datadog MCP Server                    │  │
-│  │  (mcp.us3.datadoghq.com/api/unstable/mcp-server)   │  │
+│  │  (mcp.datadoghq.com/api/unstable/mcp-server)   │  │
 │  └──────────────────────┬─────────────────────────────┘  │
 ├─────────────────────────┴───────────────────────────────┤
 │                    Datadog Platform                       │
